@@ -1,0 +1,201 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: #FFFFFF;
+  border: 1px solid #E8EAF0;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.heading {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1A1A2E;
+  margin: 0 0 4px;
+}
+.subheading {
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6B7280;
+  margin: 0 0 18px;
+}
+
+.body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  color: #6B7280;
+  line-height: 1.7;
+  margin: 0 0 16px;
+}
+
+/* Section 1 — tiers */
+.tiers {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.tier {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+}
+.tierIndicator {
+  width: 4px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.tierBody { flex: 1; }
+.tierLabel {
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.tierList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  color: #6B7280;
+  line-height: 1.7;
+}
+
+/* Section 2 — detail grid */
+.detailGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 24px;
+  margin: 0 0 16px;
+}
+.detailRow {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 0;
+  border-bottom: 1px solid #E8EAF0;
+}
+.detailLabel {
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #6B7280;
+}
+.detailValue {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  color: #1A1A2E;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 720px) {
+  .detailGrid { grid-template-columns: 1fr; }
+}
+
+.amberCallout,
+.greyCallout {
+  border-radius: 6px;
+  padding: 14px 16px;
+  margin-top: 12px;
+}
+.amberCallout {
+  background: rgba(245, 166, 35, 0.07);
+  border: 1px solid rgba(245, 166, 35, 0.3);
+  border-left: 4px solid #F5A623;
+}
+.greyCallout {
+  background: #F5F6F8;
+  border: 1px solid #E8EAF0;
+  border-left: 4px solid #6B7280;
+}
+.amberCallout p,
+.greyCallout p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  color: #1A1A2E;
+  line-height: 1.6;
+  margin: 0;
+}
+.calloutLabel {
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #6B7280;
+  margin-bottom: 6px;
+}
+.amberCallout .calloutLabel { color: #F5A623; }
+
+/* Section 3 — code box */
+.codeBox {
+  font-family: "DM Mono", monospace;
+  font-size: 13px;
+  background: #F5F6F8;
+  border: 1px solid #E8EAF0;
+  border-radius: 4px;
+  padding: 14px 16px;
+  color: #1A1A2E;
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Section 4 — steps */
+.stepsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.stepCard {
+  background: #FFFFFF;
+  border: 1px solid #E8EAF0;
+  border-left: 3px solid #FF6200;
+  border-radius: 4px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.stepNum {
+  font-family: "DM Mono", monospace;
+  font-size: 28px;
+  font-weight: 500;
+  color: #FF6200;
+  line-height: 1;
+}
+.stepHeading {
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1A1A2E;
+  margin: 0;
+  line-height: 1.3;
+}
+.stepBody {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  color: #6B7280;
+  line-height: 1.55;
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  .stepsGrid { grid-template-columns: 1fr; }
+}

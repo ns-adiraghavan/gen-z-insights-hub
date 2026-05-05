@@ -4,6 +4,7 @@ import styles from "./index.module.css";
 import { Overview } from "@/components/overview/Overview";
 import { WomensFashion } from "@/components/womens-fashion/WomensFashion";
 import { AreaSection } from "@/components/area-section/AreaSection";
+import { Methodology } from "@/components/methodology/Methodology";
 import netscribesLogo from "@/assets/netscribes-logo.png";
 
 export const Route = createFileRoute("/")({
@@ -35,6 +36,7 @@ const SECTIONS = [
   { id: "creator-tools", label: "Creator Tools" },
   { id: "sports-fitness", label: "Sports & Fitness" },
   { id: "jewellery", label: "Jewellery & Accessories" },
+  { id: "methodology", label: "Methodology" },
 ] as const;
 
 function Index() {
@@ -154,6 +156,11 @@ function Index() {
                   title="Jewellery & Accessories"
                   callout="Artificial jewellery market growing at CAGR 11.4% (2025–29), driven by affordability and online access among younger consumers — IBEF 2025"
                 />
+              ) : s.id === "methodology" ? (
+                <>
+                  <h2 className={styles.sectionHeading}>Methodology</h2>
+                  <Methodology />
+                </>
               ) : (
                 <div className={styles.placeholder}>Section content coming soon.</div>
               )}
