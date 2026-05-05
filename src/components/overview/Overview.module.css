@@ -147,63 +147,90 @@
   letter-spacing: 0.04em;
 }
 
-/* ── Component 3: Gap table ── */
-.tableWrap {
-  background: #0d0f14;
-  border: 1px solid #1e2230;
-  border-radius: 4px;
-  overflow: hidden;
+/* ── Component 3: Gap priority cards ── */
+.gapList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   margin-top: 8px;
 }
-.gapTable {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 12px;
+.gapCard {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+  background: #12141a;
+  border: 1px solid #1e2230;
+  border-radius: 4px;
+  padding: 16px;
 }
-.gapTable thead th {
+.priorityBadge {
+  flex: 0 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "DM Mono", monospace;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  border-radius: 3px;
+  padding: 8px 6px;
+  text-align: center;
+}
+.priorityBadgeUrgent {
+  color: #ff4757;
+  background: rgba(255, 71, 87, 0.12);
+}
+.priorityBadgeHigh {
+  color: #f5a524;
+  background: rgba(245, 165, 36, 0.12);
+}
+.priorityBadgeDefault {
+  color: #8892a4;
+  background: rgba(136, 146, 164, 0.1);
+}
+.gapBody {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-right: 110px;
+}
+.gapName {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.35;
+}
+.gapAction {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  color: #8892a4;
+  line-height: 1.5;
+}
+.fmPill {
+  position: absolute;
+  top: 12px;
+  right: 12px;
   font-family: "DM Sans", sans-serif;
   font-size: 10px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  text-align: left;
-  color: #8892a4;
-  padding: 12px 14px;
-  background: #12141a;
-  border-bottom: 1px solid #1e2230;
+  letter-spacing: 0.06em;
+  padding: 3px 8px;
+  border-radius: 999px;
   font-weight: 500;
 }
-.gapTable tbody td {
-  padding: 12px 14px;
-  border-bottom: 1px solid #1e2230;
-  color: #e8eaf0;
-  vertical-align: middle;
+.fmPillYes {
+  color: #00e5a0;
+  background: rgba(0, 229, 160, 0.12);
+  border: 1px solid rgba(0, 229, 160, 0.3);
 }
-.gapTable tbody tr:last-child td { border-bottom: none; }
-.gapTable tbody tr:hover { background: #1a1d26; }
-
-.cellName { color: #ffffff; font-weight: 500; }
-.priorityUrgent {
-  font-family: "DM Sans", sans-serif;
-  color: #ff4757;
-  font-weight: 600;
-  font-size: 11px;
-  letter-spacing: 0.06em;
+.fmPillNo {
+  color: #4a5163;
+  background: transparent;
+  border: 1px solid #1e2230;
 }
-.priorityHigh {
-  font-family: "DM Sans", sans-serif;
-  color: #f5a524;
-  font-weight: 600;
-  font-size: 11px;
-  letter-spacing: 0.06em;
-}
-.priorityDefault {
-  font-family: "DM Sans", sans-serif;
-  color: #8892a4;
-  font-size: 11px;
-  letter-spacing: 0.06em;
-}
-.fmYes { color: #00e5a0; font-family: "DM Sans", sans-serif; }
-.fmNo { color: #4a5163; }
 
 .empty {
   padding: 24px;
