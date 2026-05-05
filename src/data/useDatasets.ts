@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import { loadDataset } from "./loadData";
+import { useSharedDatasets } from "./DatasetsContext";
 
 export interface Datasets {
   recommendations: unknown[];
