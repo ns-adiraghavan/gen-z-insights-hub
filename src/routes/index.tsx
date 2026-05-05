@@ -106,8 +106,7 @@ function Index() {
 
       <div className={styles.mainCol}>
         <header className={styles.topbar}>
-          <h1 className={styles.pageTitle}>Gen Z Opportunity — Shopsy POC</h1>
-          <span className={styles.badge}>5 Investment Areas Identified</span>
+          <span className={styles.breadcrumb}>Netscribes × Shopsy POC</span>
         </header>
 
         <main className={styles.content}>
@@ -118,10 +117,7 @@ function Index() {
               className={`${styles.section} ${i === 0 ? styles.sectionFirst : ""}`}
             >
               {s.id === "overview" ? (
-                <>
-                  <h2 className={styles.sectionHeading}>{s.label}</h2>
-                  <Overview />
-                </>
+                <Overview />
               ) : null}
               {s.id === "overview" ? null : s.id === "womens-fashion" ? (
                 <WomensFashion />
@@ -139,7 +135,6 @@ function Index() {
                   cardOverrides={{
                     "Ring Lights & Creator Accessories": {
                       cleanProductCount: 198,
-                      footnote: "49% of raw results filtered — jewellery contamination removed",
                     },
                   }}
                 />

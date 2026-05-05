@@ -73,26 +73,33 @@ export function Overview() {
 
   return (
     <div className={styles.wrap}>
-      {/* COMPONENT 1 */}
-      <div className={styles.header}>
-        <p className={styles.headerStatement}>
-          5 data-backed investment recommendations for Shopsy's Gen Z catalogue strategy.
-        </p>
-        <div className={styles.chips}>
-          <div className={styles.chip}>
-            <div className={styles.chipNum}>7,069</div>
-            <div className={styles.chipLabel}>Meesho products analysed</div>
-          </div>
-          <div className={styles.chip}>
-            <div className={styles.chipNum}>19</div>
-            <div className={styles.chipLabel}>Subcategories mapped</div>
-          </div>
-          <div className={styles.chip}>
-            <div className={styles.chipNum}>90+</div>
-            <div className={styles.chipLabel}>Gen Z keywords identified</div>
-          </div>
+      {/* HERO HEADER */}
+      <div className={styles.hero}>
+        <div className={styles.heroLeft}>
+          <div className={styles.heroEyebrow}>NETSCRIBES × SHOPSY POC</div>
+          <h1 className={styles.heroTitle}>The Gen Z Opportunity</h1>
+          <p className={styles.heroSubtitle}>
+            5 data-backed investment recommendations for Shopsy's Gen Z catalogue strategy
+          </p>
+        </div>
+        <div className={styles.heroStats}>
+          {[
+            { n: "240", l: "Categories Analyzed" },
+            { n: "5", l: "Priority Segments" },
+            { n: "90+", l: "Gen Z Keywords" },
+            { n: "10", l: "Gap Recommendations" },
+          ].map((s) => (
+            <div key={s.l} className={styles.heroStat}>
+              <div className={styles.heroStatNum}>{s.n}</div>
+              <div className={styles.heroStatLabel}>{s.l}</div>
+            </div>
+          ))}
         </div>
       </div>
+
+      <p className={styles.priorityBasis}>
+        Priority reflects first-mover status (URGENT = neither platform has this section), Gen Z demand evidence strength, and Shopsy's subcategory gap count vs Meesho.
+      </p>
 
       {/* COMPONENT 2 */}
       {recs.length > 0 ? (

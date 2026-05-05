@@ -157,7 +157,7 @@
 .stepCard {
   background: #FFFFFF;
   border: 1px solid #E8EAF0;
-  border-left: 3px solid #FF6200;
+  border-left: 3px solid #6B35C9;
   border-radius: 4px;
   padding: 18px 20px;
   display: flex;
@@ -168,7 +168,7 @@
   font-family: "DM Mono", monospace;
   font-size: 28px;
   font-weight: 500;
-  color: #FF6200;
+  color: #6B35C9;
   line-height: 1;
 }
 .stepHeading {

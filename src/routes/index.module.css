@@ -69,12 +69,12 @@
 }
 
 .navItemActive {
-  color: #FF6200;
-  background: #FFF0E8;
+  color: #6B35C9;
+  background: #F0EAFB;
 }
 .navItemActive .navAccent {
-  background: #FF6200;
-  box-shadow: 0 0 8px rgba(255, 98, 0, 0.45);
+  background: #6B35C9;
+  box-shadow: 0 0 8px rgba(107, 53, 201, 0.45);
 }
 
 .navLabel {
@@ -104,7 +104,7 @@
   font-family: "DM Mono", monospace;
   font-size: 22px;
   font-weight: 500;
-  color: #FF6200;
+  color: #6B35C9;
   line-height: 1;
 }
 .snapshotMeta {
@@ -138,29 +138,16 @@
   border-bottom: 1px solid #E8EAF0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 0 24px;
 }
 
-.pageTitle {
+.breadcrumb {
   font-family: "DM Sans", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 0.01em;
-  color: #1A1A2E;
-  margin: 0;
-}
-
-.badge {
-  font-family: "DM Sans", sans-serif;
-  font-size: 10px;
-  letter-spacing: 0.14em;
+  font-size: 11px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #FF6200;
-  border: 1px solid #FFE0CC;
-  background: #FFF0E8;
-  padding: 5px 10px;
-  border-radius: 3px;
+  color: #6B7280;
 }
 
 .content {

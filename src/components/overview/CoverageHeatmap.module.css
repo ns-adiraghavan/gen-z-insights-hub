@@ -99,7 +99,7 @@
   text-overflow: ellipsis;
 }
 
-.tierVeryHigh { color: #FF6200; }
+.tierVeryHigh { color: #6B35C9; }
 .tierHigh { color: #f5a524; }
 .tierMedium { color: #1A1A2E; }
 .tierLow { color: #6B7280; }
@@ -120,14 +120,14 @@
 
 .barFill {
   height: 100%;
-  background: rgba(255, 98, 0, 0.7);
+  background: rgba(107, 53, 201, 0.7);
   border-radius: 2px;
 }
 
 .pct {
   font-family: "DM Mono", monospace;
   font-size: 11px;
-  color: #FF6200;
+  color: #6B35C9;
   min-width: 24px;
 }
 

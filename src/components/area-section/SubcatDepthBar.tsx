@@ -24,7 +24,7 @@ export interface SubcatDepthBarProps {
 }
 
 const PALETTE = [
-  "#FF6200",
+  "#6B35C9",
   "#f5a524",
   "#8b9eff",
   "#E53935",
@@ -88,9 +88,6 @@ export function SubcatDepthBar({ depthRow }: SubcatDepthBarProps) {
         </div>
       )}
 
-      {depthRow.contamination_note && (
-        <div className={styles.contamination}>{depthRow.contamination_note}</div>
-      )}
     </div>
   );
 }
