@@ -1,0 +1,23 @@
+.callout {
+  background: rgba(255, 98, 0, 0.05);
+  border: 1px solid rgba(255, 98, 0, 0.2);
+  border-left: 4px solid #FF6200;
+  padding: 12px 16px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.label {
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #FF6200;
+}
+.text {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  color: #1A1A2E;
+  line-height: 1.55;
+}

@@ -3,6 +3,8 @@ import { useDatasets } from "@/data/useDatasets";
 import { loadDataset } from "@/data/loadData";
 import { PriceZonePanel } from "./PriceZonePanel";
 import { SubcatDepthBar, type SubcatDepthRow } from "./SubcatDepthBar";
+import { DecisionCallout } from "./DecisionCallout";
+import { KeywordPanel } from "./KeywordPanel";
 import styles from "./AreaSection.module.css";
 
 interface Recommendation {
@@ -54,14 +56,6 @@ export interface AreaSectionProps {
 function tierClass(tier?: string) {
   if (!tier) return "";
   return tier.toLowerCase().includes("very") ? styles.tierVeryHigh : styles.tierHigh;
-}
-function intentClass(intent?: string) {
-  if (!intent) return "";
-  const i = intent.toLowerCase();
-  if (i.includes("shop")) return styles.intentShopping;
-  if (i.includes("disc")) return styles.intentDiscovery;
-  if (i.includes("res")) return styles.intentResearch;
-  return "";
 }
 function priorityValueClass(p?: string) {
   if (!p) return "";
@@ -149,6 +143,8 @@ export function AreaSection({
           )}
         </div>
       </div>
+
+      <DecisionCallout areaId={areaId} />
 
       {/* Callout */}
       {callout && <div className={styles.callout}>{callout}</div>}
@@ -243,28 +239,7 @@ export function AreaSection({
       )}
 
       {/* COMPONENT 3 — Keywords */}
-      <div className={styles.kwPanel}>
-        <h4 className={styles.kwTitle}>Gen Z Search Terms</h4>
-        {keywords.length > 0 ? (
-          <div className={styles.kwGrid}>
-            {keywords.map((k, i) => (
-              <div key={i} className={styles.kwRow}>
-                <span className={styles.kwText} title={k.keyword}>
-                  {k.keyword ?? "—"}
-                </span>
-                <span className={`${styles.kwIntent} ${intentClass(k.intent)}`}>
-                  {k.intent ?? "—"}
-                </span>
-                <span className={styles.kwSource} title={k.source}>
-                  {k.source ?? "—"}
-                </span>
-              </div>
-            ))}
-          </div>
-        ) : (
-          <div className={styles.empty}>No keyword data available.</div>
-        )}
-      </div>
+      <KeywordPanel areaId={areaId} keywords={keywords} />
     </div>
   );
 }
