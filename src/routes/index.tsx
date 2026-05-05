@@ -156,6 +156,11 @@ function Index() {
                   title="Jewellery & Accessories"
                   callout="Artificial jewellery market growing at CAGR 11.4% (2025–29), driven by affordability and online access among younger consumers — IBEF 2025"
                 />
+              ) : s.id === "methodology" ? (
+                <>
+                  <h2 className={styles.sectionHeading}>Methodology</h2>
+                  <Methodology />
+                </>
               ) : (
                 <div className={styles.placeholder}>Section content coming soon.</div>
               )}
