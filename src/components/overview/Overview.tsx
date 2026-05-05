@@ -78,6 +78,11 @@ export function Overview() {
       {/* HERO HEADER */}
       <div className={styles.hero}>
         <div className={styles.heroLeft}>
+          <div className={styles.heroBrandRow}>
+            <img src={netscribesLogo} alt="Netscribes" className={styles.heroLogoNs} />
+            <span className={styles.heroBrandX}>×</span>
+            <img src={shopsyLogo} alt="Shopsy" className={styles.heroLogoShopsy} />
+          </div>
           <div className={styles.heroEyebrow}>NETSCRIBES × SHOPSY POC</div>
           <h1 className={styles.heroTitle}>The Gen Z Opportunity</h1>
           <p className={styles.heroSubtitle}>
