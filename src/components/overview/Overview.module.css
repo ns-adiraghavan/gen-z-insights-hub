@@ -153,6 +153,7 @@
   border: 1px solid #1e2230;
   border-radius: 4px;
   overflow: hidden;
+  margin-top: 8px;
 }
 .gapTable {
   width: 100%;
