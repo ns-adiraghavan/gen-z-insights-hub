@@ -247,28 +247,7 @@ export function AreaSection({
       )}
 
       {/* COMPONENT 3 — Keywords */}
-      <div className={styles.kwPanel}>
-        <h4 className={styles.kwTitle}>Gen Z Search Terms</h4>
-        {keywords.length > 0 ? (
-          <div className={styles.kwGrid}>
-            {keywords.map((k, i) => (
-              <div key={i} className={styles.kwRow}>
-                <span className={styles.kwText} title={k.keyword}>
-                  {k.keyword ?? "—"}
-                </span>
-                <span className={`${styles.kwIntent} ${intentClass(k.intent)}`}>
-                  {k.intent ?? "—"}
-                </span>
-                <span className={styles.kwSource} title={k.source}>
-                  {k.source ?? "—"}
-                </span>
-              </div>
-            ))}
-          </div>
-        ) : (
-          <div className={styles.empty}>No keyword data available.</div>
-        )}
-      </div>
+      <KeywordPanel areaId={areaId} keywords={keywords} />
     </div>
   );
 }
