@@ -3,6 +3,7 @@ import { useState } from "react";
 import styles from "./index.module.css";
 import { Overview } from "@/components/overview/Overview";
 import { WomensFashion } from "@/components/womens-fashion/WomensFashion";
+import { AreaSection } from "@/components/area-section/AreaSection";
 import netscribesLogo from "@/assets/netscribes-logo.png";
 
 export const Route = createFileRoute("/")({
@@ -93,6 +94,37 @@ function Index() {
                 <Overview />
               ) : s.id === "womens-fashion" ? (
                 <WomensFashion />
+              ) : s.id === "k-beauty" ? (
+                <AreaSection
+                  areaId="A2"
+                  title="K-Beauty & Skincare Routines"
+                  callout="34% of Indian Gen Z actively exploring Korean skincare — YouGov/GCI Magazine 2025"
+                />
+              ) : s.id === "creator-tools" ? (
+                <AreaSection
+                  areaId="A3"
+                  title="Creator Tools & Consumer Electronics"
+                  callout="Ring lights were Meesho's #1 electronics category search item H1 2024, driven entirely by Gen Z content creators — Meesho Smart Shopper Report"
+                  cardOverrides={{
+                    "Ring Lights & Creator Accessories": {
+                      cleanProductCount: 198,
+                      footnote: "49% of raw results filtered — jewellery contamination removed",
+                    },
+                  }}
+                />
+              ) : s.id === "sports-fitness" ? (
+                <AreaSection
+                  areaId="A4"
+                  title="Sports, Fitness & Athleisure"
+                  callout="1-in-3 Gen Z consumers allocates more than 20% of their income to fitness-related activities — Outlook Luxe / RedSeer 2026"
+                  showShopsyAdvantage
+                />
+              ) : s.id === "jewellery" ? (
+                <AreaSection
+                  areaId="A5"
+                  title="Jewellery & Accessories"
+                  callout="Artificial jewellery market growing at CAGR 11.4% (2025–29), driven by affordability and online access among younger consumers — IBEF 2025"
+                />
               ) : (
                 <div className={styles.placeholder}>Section content coming soon.</div>
               )}
