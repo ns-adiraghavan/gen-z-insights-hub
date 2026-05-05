@@ -95,8 +95,8 @@
 /* ── Callout banner ── */
 .callout {
   position: relative;
-  background: #12141a;
-  border: 1px solid #1e2230;
+  background: rgba(0, 229, 160, 0.04);
+  border: 1px solid rgba(0, 229, 160, 0.22);
   border-radius: 4px;
   padding: 14px 18px 14px 22px;
   font-family: "DM Sans", sans-serif;
@@ -294,9 +294,8 @@
   font-size: 11px;
   color: #8892a4;
   text-align: right;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
+  line-height: 1.4;
 }
 
 .empty {
