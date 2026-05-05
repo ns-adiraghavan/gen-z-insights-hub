@@ -46,13 +46,15 @@ export function CoverageHeatmap() {
     <div key={r.category} className={styles.row}>
       <span className={`${styles.catName} ${tierClass(r.genz_tier)}`}>{r.category}</span>
       <div className={styles.barWrap}>
-        <div className={styles.bar}>
+        <div className={styles.bar} title={`Shopsy lists ${r.shopsy_coverage_pct}% of subcategories in this category`}>
           <div className={styles.barFill} style={{ width: `${r.shopsy_coverage_pct}%` }} />
         </div>
-        <span className={styles.pct}>{r.shopsy_coverage_pct}</span>
+        <span className={styles.pct}>{r.shopsy_coverage_pct}%</span>
       </div>
       {r.shopsy_gap_count > 0 ? (
-        <span className={styles.gapPill}>−{r.shopsy_gap_count}</span>
+        <span className={styles.gapPill} title={`${r.shopsy_gap_count} subcategories live on Meesho but missing from Shopsy`}>
+          {r.shopsy_gap_count} missing
+        </span>
       ) : (
         <span className={styles.gapSpacer} />
       )}
@@ -62,17 +64,31 @@ export function CoverageHeatmap() {
   return (
     <div className={styles.wrap}>
       <div className={styles.titleRow}>
-        <h3 className={styles.title}>Shopsy vs Meesho — Category Coverage</h3>
+        <div>
+          <h3 className={styles.title}>Shopsy vs Meesho — Category Coverage</h3>
+          <p className={styles.subtitle}>
+            How much of each category does Shopsy actually stock? Bar = % of subcategories Shopsy lists. <strong>"X missing"</strong> = subcategories live on Meesho that Shopsy does not carry. Sorted by Gen Z demand rank.
+          </p>
+        </div>
         <span className={styles.infoWrap} tabIndex={0}>
           <span className={styles.infoIcon} aria-label="More info">i</span>
           <span className={styles.tooltip} role="tooltip">
-            Source: NS Research team catalogue audit of Shopsy.in vs Meesho.com, April 2026.
-            Each of 240 subcategories across 20 categories was manually classified as present
-            on Both Platforms, Shopsy Only, or Meesho Only. shopsy_gap_count = subcategories
-            where Meesho is present but Shopsy is not. Coverage % = (both + platform_only) /
-            total_subcats.
+            NS Research team manually audited 240 subcategories across 20 categories on Shopsy.in and Meesho.com (April 2026). Each subcategory was classified as: Both platforms, Shopsy only, or Meesho only. "Missing" count = subcategories where Meesho is present but Shopsy is not. Coverage % = subcategories Shopsy carries ÷ total subcategories in that category.
           </span>
         </span>
+      </div>
+
+      <div className={styles.axisRow}>
+        <span className={styles.axisLabel}>0%</span>
+        <span className={styles.axisLabel}>← Shopsy subcategory coverage →</span>
+        <span className={styles.axisLabel}>100%</span>
+      </div>
+
+      <div className={styles.legendRow}>
+        <span className={`${styles.tierDot} ${styles.tierVeryHigh}`} /> Very High Gen Z demand
+        <span className={`${styles.tierDot} ${styles.tierHigh}`} /> High Gen Z demand
+        <span className={`${styles.tierDot} ${styles.tierMedium}`} /> Medium
+        <span className={`${styles.tierDot} ${styles.tierLow}`} /> Lower demand
       </div>
 
       <div className={styles.grid}>

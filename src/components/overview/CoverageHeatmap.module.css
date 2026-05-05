@@ -8,20 +8,61 @@
 
 .titleRow {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .title {
   font-family: "DM Sans", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  color: #1A1A2E;
+  margin: 0 0 4px;
+}
+
+.subtitle {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
   color: #6B7280;
   margin: 0;
+  line-height: 1.5;
 }
+
+.axisRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px;
+  margin-bottom: 4px;
+}
+.axisLabel {
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  color: #6B7280;
+}
+
+.legendRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  color: #6B7280;
+  margin-bottom: 10px;
+  padding: 0 12px;
+}
+.tierDot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.tierDot.tierVeryHigh { background: #6B35C9; }
+.tierDot.tierHigh { background: #f5a524; }
+.tierDot.tierMedium { background: #1A1A2E; }
+.tierDot.tierLow { background: #6B7280; }
 
 .infoWrap {
   position: relative;

@@ -96,9 +96,16 @@ export function Overview() {
         </div>
       </div>
 
-      <p className={styles.priorityBasis}>
-        Priority reflects first-mover status (URGENT = neither platform has this section), Gen Z demand evidence strength, and Shopsy's subcategory gap count vs Meesho.
-      </p>
+      <div className={styles.priorityBasisBlock}>
+        <div className={styles.priorityDefRow}>
+          <span className={styles.priorityDefBadgeUrgent}>URGENT</span>
+          <span className={styles.priorityDefText}>Neither Shopsy nor Meesho has this section yet — genuine first-mover whitespace with strong Gen Z demand evidence</span>
+        </div>
+        <div className={styles.priorityDefRow}>
+          <span className={styles.priorityDefBadgeHigh}>HIGH</span>
+          <span className={styles.priorityDefText}>Meesho already has this section; Shopsy does not — Shopsy is losing ground to a live competitor</span>
+        </div>
+      </div>
 
       {/* COMPONENT 2 */}
       {recs.length > 0 ? (
@@ -148,6 +155,11 @@ export function Overview() {
       <OverviewSummaryModules />
 
       {/* COMPONENT 3 */}
+      <div className={styles.gapListSection}>
+        <h2 className={styles.gapListHeading}>Catalogue Gaps to Close</h2>
+        <p className={styles.gapListSubhead}>
+          Each row = one missing section on Shopsy that has documented Gen Z demand. Priority and First Mover status are defined above.
+        </p>
       <div className={styles.gapList}>
         {gaps.length > 0 ? (
           gaps.map((g, i) => {
@@ -174,6 +186,7 @@ export function Overview() {
         ) : (
           <div className={styles.empty}>No Shopsy coverage gap data available.</div>
         )}
+      </div>
       </div>
 
       {/* COMPONENT 4 */}
