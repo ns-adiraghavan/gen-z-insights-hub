@@ -14,7 +14,7 @@
 .skelBar {
   height: 14px;
   background: #FFFFFF;
-  border: 1px solid #1A1A2E;
+  border: 1px solid #E8EAF0;
   border-radius: 3px;
 }
 .skelBar:nth-child(1) { width: 60%; }
@@ -46,7 +46,7 @@
 }
 .chip {
   background: #FFFFFF;
-  border: 1px solid #1A1A2E;
+  border: 1px solid #E8EAF0;
   border-radius: 4px;
   padding: 10px 12px;
   min-width: 120px;
@@ -82,7 +82,7 @@
   flex: 0 0 280px;
   height: 180px;
   background: #FFFFFF;
-  border: 1px solid #1A1A2E;
+  border: 1px solid #E8EAF0;
   border-left: 3px solid transparent;
   border-radius: 4px;
   padding: 20px;
@@ -160,7 +160,7 @@
   align-items: stretch;
   gap: 16px;
   background: #FFFFFF;
-  border: 1px solid #1A1A2E;
+  border: 1px solid #E8EAF0;
   border-radius: 4px;
   padding: 16px;
 }
@@ -229,7 +229,7 @@
 .fmPillNo {
   color: #4a5163;
   background: transparent;
-  border: 1px solid #1A1A2E;
+  border: 1px solid #E8EAF0;
 }
 
 .empty {
@@ -244,7 +244,7 @@
 .provenance {
   position: relative;
   background: #FFFFFF;
-  border: 1px solid #1A1A2E;
+  border: 1px solid #E8EAF0;
   border-radius: 4px;
   padding: 10px 14px 10px 18px;
   font-family: "DM Sans", sans-serif;

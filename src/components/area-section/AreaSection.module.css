@@ -47,7 +47,7 @@
 }
 .chip {
   background: #FFFFFF;
-  border: 1px solid #1A1A2E;
+  border: 1px solid #E8EAF0;
   border-radius: 4px;
   padding: 10px 12px;
   min-width: 140px;
@@ -129,7 +129,7 @@
 .card {
   position: relative;
   background: #FFFFFF;
-  border: 1px solid #1A1A2E;
+  border: 1px solid #E8EAF0;
   border-radius: 4px;
   padding: 20px;
   display: flex;
@@ -236,7 +236,7 @@
 /* ── Component 3: Keywords panel ── */
 .kwPanel {
   background: #FFFFFF;
-  border: 1px solid #1A1A2E;
+  border: 1px solid #E8EAF0;
   border-radius: 4px;
   padding: 20px;
 }
@@ -281,7 +281,7 @@
   text-transform: uppercase;
   padding: 2px 7px;
   border-radius: 10px;
-  border: 1px solid #1A1A2E;
+  border: 1px solid #E8EAF0;
   background: #FFFFFF;
   white-space: nowrap;
   justify-self: start;
@@ -305,7 +305,7 @@
   font-family: "DM Sans", sans-serif;
   font-size: 12px;
   background: #FFFFFF;
-  border: 1px solid #1A1A2E;
+  border: 1px solid #E8EAF0;
   border-radius: 4px;
 }
 
@@ -313,7 +313,7 @@
 .skelBar {
   height: 14px;
   background: #FFFFFF;
-  border: 1px solid #1A1A2E;
+  border: 1px solid #E8EAF0;
   border-radius: 3px;
 }
 .skelBar:nth-child(1) { width: 60%; }

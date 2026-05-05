@@ -1,7 +1,7 @@
 .wrap {
   margin-top: 24px;
   background: #FFFFFF;
-  border: 1px solid #1A1A2E;
+  border: 1px solid #E8EAF0;
   border-radius: 4px;
   padding: 20px;
 }
@@ -35,7 +35,7 @@
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  border: 1px solid #1A1A2E;
+  border: 1px solid #E8EAF0;
   color: #6B7280;
   font-size: 9px;
   font-family: "DM Sans", sans-serif;
@@ -50,7 +50,7 @@
   top: calc(100% + 6px);
   left: 0;
   background: #FFFFFF;
-  border: 1px solid #1A1A2E;
+  border: 1px solid #E8EAF0;
   border-radius: 4px;
   padding: 12px;
   max-width: 320px;
