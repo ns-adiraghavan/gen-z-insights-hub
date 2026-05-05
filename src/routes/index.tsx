@@ -5,7 +5,7 @@ import { Overview } from "@/components/overview/Overview";
 import { WomensFashion } from "@/components/womens-fashion/WomensFashion";
 import { AreaSection } from "@/components/area-section/AreaSection";
 import { Methodology } from "@/components/methodology/Methodology";
-import netscribesLogo from "@/assets/netscribes-logo.png";
+
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -72,7 +72,7 @@ function Index() {
     <div className={styles.shell}>
       <aside className={styles.sidebar}>
         <div className={styles.logo}>
-          <img src={netscribesLogo} alt="Netscribes" className={styles.logoImg} />
+          <span className={styles.logoMark}>Gen Z Insights</span>
         </div>
 
         <nav className={styles.nav}>
