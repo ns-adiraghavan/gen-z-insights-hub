@@ -1,0 +1,131 @@
+.panel {
+  margin-top: 16px;
+  background: #FFFFFF;
+  border: 1px solid #E8EAF0;
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #6B7280;
+  margin: 0;
+}
+
+.empty {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  color: #6B7280;
+}
+
+/* Priority cards */
+.priorityList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 10px;
+}
+.priorityCard {
+  background: rgba(255, 98, 0, 0.05);
+  border: 1px solid rgba(255, 98, 0, 0.25);
+  border-left: 3px solid #FF6200;
+  border-radius: 4px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.priorityHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.priorityPill {
+  background: #FF6200;
+  color: #FFFFFF;
+  font-family: "DM Sans", sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 7px;
+  border-radius: 10px;
+}
+.priorityKw {
+  font-family: "DM Mono", monospace;
+  font-size: 13px;
+  color: #1A1A2E;
+  font-weight: 500;
+  line-height: 1.3;
+}
+.priorityNote {
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  color: #6B7280;
+  line-height: 1.4;
+}
+
+/* Toggle */
+.toggle {
+  align-self: flex-start;
+  background: transparent;
+  border: none;
+  padding: 4px 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #FF6200;
+  cursor: pointer;
+}
+.toggle:hover { text-decoration: underline; }
+
+/* Remaining keyword rows (matches existing style) */
+.kwGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+}
+.kwRow {
+  display: grid;
+  grid-template-columns: 1.5fr auto 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 8px 0;
+  border-bottom: 1px solid #E8EAF0;
+}
+.kwRow:last-child { border-bottom: none; }
+.kwText {
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+  color: #1A1A2E;
+}
+.kwIntent {
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 2px 6px;
+  border: 1px solid #E8EAF0;
+  border-radius: 10px;
+  color: #6B7280;
+  white-space: nowrap;
+  align-self: center;
+}
+.intentShopping { color: #FF6200; border-color: rgba(255, 98, 0, 0.3); }
+.intentDiscovery { color: #f5a524; border-color: rgba(245, 165, 36, 0.3); }
+.intentResearch { color: #6B7280; }
+.kwSource {
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  color: #6B7280;
+  font-style: italic;
+  white-space: normal;
+  line-height: 1.4;
+}
