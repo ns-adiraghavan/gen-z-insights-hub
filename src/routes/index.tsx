@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./index.module.css";
 import { Overview } from "@/components/overview/Overview";
 import { WomensFashion } from "@/components/womens-fashion/WomensFashion";
@@ -39,6 +39,32 @@ const SECTIONS = [
 
 function Index() {
   const [active, setActive] = useState<string>("overview");
+
+  useEffect(() => {
+    const elements = SECTIONS
+      .map((s) => document.getElementById(s.id))
+      .filter((el): el is HTMLElement => !!el);
+
+    if (elements.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+        if (visible[0]) {
+          setActive(visible[0].target.id);
+        }
+      },
+      {
+        rootMargin: "-20% 0px -70% 0px",
+        threshold: 0,
+      },
+    );
+
+    elements.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <div className={styles.shell}>
@@ -89,9 +115,14 @@ function Index() {
               id={s.id}
               className={`${styles.section} ${i === 0 ? styles.sectionFirst : ""}`}
             >
-              <h2 className={styles.sectionHeading}>{s.label}</h2>
               {s.id === "overview" ? (
-                <Overview />
+                <>
+                  <h2 className={styles.sectionHeading}>{s.label}</h2>
+                  <Overview />
+                </>
+              ) : null}
+              {s.id === "overview" ? null : s.id === "womens-fashion" ? (
+                <WomensFashion />
               ) : s.id === "womens-fashion" ? (
                 <WomensFashion />
               ) : s.id === "k-beauty" ? (
