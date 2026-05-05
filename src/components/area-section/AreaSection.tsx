@@ -57,14 +57,6 @@ function tierClass(tier?: string) {
   if (!tier) return "";
   return tier.toLowerCase().includes("very") ? styles.tierVeryHigh : styles.tierHigh;
 }
-function intentClass(intent?: string) {
-  if (!intent) return "";
-  const i = intent.toLowerCase();
-  if (i.includes("shop")) return styles.intentShopping;
-  if (i.includes("disc")) return styles.intentDiscovery;
-  if (i.includes("res")) return styles.intentResearch;
-  return "";
-}
 function priorityValueClass(p?: string) {
   if (!p) return "";
   const u = p.toUpperCase();
