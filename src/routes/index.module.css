@@ -3,7 +3,7 @@
   min-height: 100vh;
   background: #0a0b0f;
   color: #e8eaf0;
-  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  font-family: "DM Sans", system-ui, -apple-system, sans-serif;
   font-size: 13px;
   line-height: 1.6;
 }
@@ -22,15 +22,14 @@
 }
 
 .logo {
-  font-family: "Syne", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: -0.01em;
-  color: #ffffff;
   padding: 0 20px 24px;
+  display: flex;
+  align-items: center;
 }
-.logoDot {
-  color: #00e5a0;
+.logoImg {
+  height: 28px;
+  width: auto;
+  display: block;
 }
 
 .nav {
@@ -77,7 +76,7 @@
 }
 
 .navLabel {
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   font-size: 12px;
   letter-spacing: 0.02em;
 }
@@ -91,7 +90,7 @@
   border-radius: 4px;
 }
 .snapshotLabel {
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   font-size: 10px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -99,20 +98,20 @@
   margin-bottom: 8px;
 }
 .snapshotValue {
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: 500;
   color: #00e5a0;
   line-height: 1;
 }
 .snapshotMeta {
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   font-size: 11px;
   color: #e8eaf0;
   margin-top: 4px;
 }
 .snapshotMetaDim {
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   font-size: 11px;
   color: #8892a4;
   margin-top: 2px;
@@ -141,7 +140,7 @@
 }
 
 .pageTitle {
-  font-family: "Syne", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.01em;
@@ -150,7 +149,7 @@
 }
 
 .badge {
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   font-size: 10px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -175,7 +174,7 @@
 }
 
 .sectionHeading {
-  font-family: "Syne", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 22px;
   letter-spacing: -0.01em;
@@ -184,7 +183,7 @@
 }
 
 .placeholder {
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   font-size: 12px;
   color: #8892a4;
   padding: 24px;
