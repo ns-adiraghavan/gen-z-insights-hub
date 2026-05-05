@@ -1,0 +1,111 @@
+.wrap {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8892a4;
+  margin: 0;
+}
+
+.infoWrap { position: relative; display: inline-flex; }
+
+.infoIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #2a2f3f;
+  color: #8892a4;
+  font-size: 8px;
+  font-family: "DM Sans", sans-serif;
+  cursor: help;
+  line-height: 1;
+}
+
+.tooltip {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  background: #1a1d26;
+  border: 1px solid #2a2f3f;
+  border-radius: 4px;
+  padding: 12px;
+  max-width: 320px;
+  width: max-content;
+  font-size: 11px;
+  color: #8892a4;
+  line-height: 1.5;
+  z-index: 30;
+  display: none;
+  font-family: "DM Sans", sans-serif;
+}
+
+.infoWrap:hover .tooltip,
+.infoWrap:focus-within .tooltip { display: block; }
+
+.bar {
+  display: flex;
+  width: 100%;
+  height: 12px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: #1e2230;
+}
+
+.seg {
+  height: 100%;
+  cursor: help;
+  transition: opacity 0.15s;
+}
+
+.seg:hover { opacity: 0.8; }
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 9px;
+  color: #8892a4;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.legendPct {
+  font-family: "DM Mono", monospace;
+  color: #e8eaf0;
+}
+
+.contamination {
+  font-family: "DM Sans", sans-serif;
+  font-size: 9px;
+  color: #f5a524;
+  font-style: italic;
+}
