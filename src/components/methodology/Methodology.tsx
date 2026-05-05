@@ -1,16 +1,17 @@
 import styles from "./Methodology.module.css";
 
-const PRIMARY = [
-  "YouGov / GCI Magazine 2025 — Commissioned primary survey. India-specific. 18–29 age group. Source of the 34% K-beauty stat.",
-  "Meesho Live Product Scrape — April 2026. 7,459 products across 19 keyword categories. ~400 products per keyword.",
+const OUR_DATA = [
+  "Meesho Live Product Scrape — April 2026. 7,459 products across 19 keyword categories, ~400 products per keyword. Fields: product name, subcategory, min catalogue price, review count, rating, assurance badge.",
+  "NS Category Audit — April 2026. 240 subcategories manually mapped across 20 category groups. Each subcategory classified as Both / Shopsy Only / Meesho Only by the NS research team.",
 ];
-const INDUSTRY = [
-  "Bain & Company 2025, RedSeer 2025, IBEF 2025, IDC India 2025, NielsenIQ 2025, McKinsey, IMARC, Mintel",
+const PRIMARY_SURVEY = [
+  "YouGov / GCI Magazine 2025 — Commissioned primary survey, India-specific, 18–29 age group. This is the source of the 34% K-beauty statistic. Independent of NS — included as the strongest available primary human evidence in the dataset.",
 ];
-const TRADE = [
-  "Meesho Smart Shopper Report H1 2024, Shiprocket, imagesBOF, Printrove, Glance.com",
+const INDUSTRY_TRADE = [
+  "Industry Research (high confidence): Bain & Company 2025, RedSeer 2025, IBEF 2025, IDC India 2025, NielsenIQ 2025, McKinsey, IMARC, Mintel",
+  "Trade & Platform Intelligence: Meesho Smart Shopper Report H1 2024, Shiprocket, imagesBOF, Printrove, Glance.com",
+  "Directional only (context, not primary evidence): KPMG India blog, Outlook Business / Deloitte",
 ];
-const DIRECTIONAL = ["KPMG India blog, Outlook Business / Deloitte"];
 
 const SCRAPE_FIELDS: { label: string; value: string }[] = [
   { label: "Scrape date", value: "April 2026" },
@@ -85,18 +86,9 @@ export function Methodology() {
         <h3 className={styles.heading}>What We Used</h3>
         <p className={styles.subheading}>Data Sources</p>
         <div className={styles.tiers}>
-          <Tier color="#2ECC71" label="🟢 PRIMARY" items={PRIMARY} />
-          <Tier color="#F5A623" label="🟡 INDUSTRY RESEARCH" items={INDUSTRY} />
-          <Tier
-            color="#6B35C9"
-            label="🟠 TRADE & PLATFORM INTELLIGENCE"
-            items={TRADE}
-          />
-          <Tier
-            color="#E53935"
-            label="🔴 DIRECTIONAL ONLY — used for context, not as primary evidence"
-            items={DIRECTIONAL}
-          />
+          <Tier color="#6B35C9" label="NETSCRIBES PROPRIETARY" items={OUR_DATA} />
+          <Tier color="#2ECC71" label="COMMISSIONED PRIMARY" items={PRIMARY_SURVEY} />
+          <Tier color="#F5A623" label="SECONDARY & DIRECTIONAL" items={INDUSTRY_TRADE} />
         </div>
       </div>
 
@@ -115,13 +107,17 @@ export function Methodology() {
 
         <div className={styles.amberCallout}>
           <div className={styles.calloutLabel}>Data quality note</div>
+          <p>Three keyword categories required contamination filtering before analysis:</p>
           <p>
-            Contamination was identified and removed from 3 keywords before
-            analysis: Ring Lights (49.2% of raw results were jewellery
-            'Rings' — 198 of 390 kept), Earphones (8.3% non-earphone products
-            removed), Matching Sets (10.1% non-fashion items removed). All
-            metrics in this dashboard are computed from clean rows only.
+            <strong>Ring Lights & Creator Tools:</strong> 49.2% of raw results (192 of 390 rows) were jewellery 'Rings' misclassified by Meesho's search index. Only 198 confirmed creator product rows were used for pricing and count metrics.
           </p>
+          <p>
+            <strong>Earphones & Earbuds:</strong> 8.3% of results were non-earphone products (Nail Cutters, Mobile Cases). Removed before analysis.
+          </p>
+          <p>
+            <strong>Women's Matching Sets:</strong> 10.1% of results were non-fashion items (Bangles, Watches, Perfumes). Removed before analysis.
+          </p>
+          <p>All metrics in this dashboard are computed from clean rows only. Raw counts are retained in the underlying data for audit purposes.</p>
         </div>
 
         <div className={styles.greyCallout}>
