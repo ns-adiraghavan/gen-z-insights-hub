@@ -4,6 +4,7 @@ import styles from "./index.module.css";
 import { Overview } from "@/components/overview/Overview";
 import { WomensFashion } from "@/components/womens-fashion/WomensFashion";
 import { AreaSection } from "@/components/area-section/AreaSection";
+import { Methodology } from "@/components/methodology/Methodology";
 import netscribesLogo from "@/assets/netscribes-logo.png";
 
 export const Route = createFileRoute("/")({
