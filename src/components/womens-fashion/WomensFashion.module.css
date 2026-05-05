@@ -63,7 +63,7 @@
 .chipValue {
   font-family: "DM Mono", monospace;
   font-size: 14px;
-  color: #FF6200;
+  color: #6B35C9;
   line-height: 1.2;
 }
 .chipValueUrgent {
@@ -124,7 +124,7 @@
   color: #F5F6F8;
   white-space: nowrap;
 }
-.tierVeryHigh { background: #FF6200; }
+.tierVeryHigh { background: #6B35C9; }
 .tierHigh { background: #f5a524; }
 
 .shopsyGapPill {
@@ -162,7 +162,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  background: rgba(255, 98, 0, 0.6);
+  background: rgba(107, 53, 201, 0.6);
   border-radius: 3px;
 }
 .priceBarLabels {
@@ -179,7 +179,7 @@
   font-family: "DM Mono", monospace;
   font-size: 12px;
 }
-.priceMedian { color: #FF6200; }
+.priceMedian { color: #6B35C9; }
 .priceAvg { color: #6B7280; }
 
 .cardFooter {
@@ -224,7 +224,7 @@
 .kwText {
   font-family: "DM Mono", monospace;
   font-size: 12px;
-  color: #FF6200;
+  color: #6B35C9;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -242,7 +242,7 @@
   white-space: nowrap;
   justify-self: start;
 }
-.intentShopping { color: #FF6200; border-color: rgba(255, 98, 0, 0.3); }
+.intentShopping { color: #6B35C9; border-color: rgba(107, 53, 201, 0.3); }
 .intentDiscovery { color: #f5a524; border-color: rgba(245, 165, 36, 0.3); }
 .intentResearch { color: #8b9eff; border-color: rgba(139, 158, 255, 0.3); }
 .kwSource {

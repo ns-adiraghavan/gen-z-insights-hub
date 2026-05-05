@@ -88,7 +88,7 @@ export function Methodology() {
           <Tier color="#2ECC71" label="🟢 PRIMARY" items={PRIMARY} />
           <Tier color="#F5A623" label="🟡 INDUSTRY RESEARCH" items={INDUSTRY} />
           <Tier
-            color="#FF6200"
+            color="#6B35C9"
             label="🟠 TRADE & PLATFORM INTELLIGENCE"
             items={TRADE}
           />
