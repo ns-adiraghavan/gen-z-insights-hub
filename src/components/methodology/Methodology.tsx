@@ -86,18 +86,9 @@ export function Methodology() {
         <h3 className={styles.heading}>What We Used</h3>
         <p className={styles.subheading}>Data Sources</p>
         <div className={styles.tiers}>
-          <Tier color="#2ECC71" label="🟢 PRIMARY" items={PRIMARY} />
-          <Tier color="#F5A623" label="🟡 INDUSTRY RESEARCH" items={INDUSTRY} />
-          <Tier
-            color="#6B35C9"
-            label="🟠 TRADE & PLATFORM INTELLIGENCE"
-            items={TRADE}
-          />
-          <Tier
-            color="#E53935"
-            label="🔴 DIRECTIONAL ONLY — used for context, not as primary evidence"
-            items={DIRECTIONAL}
-          />
+          <Tier color="#6B35C9" label="NETSCRIBES PROPRIETARY" items={OUR_DATA} />
+          <Tier color="#2ECC71" label="COMMISSIONED PRIMARY" items={PRIMARY_SURVEY} />
+          <Tier color="#F5A623" label="SECONDARY & DIRECTIONAL" items={INDUSTRY_TRADE} />
         </div>
       </div>
 
