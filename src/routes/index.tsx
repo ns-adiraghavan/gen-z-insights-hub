@@ -106,8 +106,7 @@ function Index() {
 
       <div className={styles.mainCol}>
         <header className={styles.topbar}>
-          <h1 className={styles.pageTitle}>Gen Z Opportunity — Shopsy POC</h1>
-          <span className={styles.badge}>5 Investment Areas Identified</span>
+          <span className={styles.breadcrumb}>Netscribes × Shopsy POC</span>
         </header>
 
         <main className={styles.content}>
