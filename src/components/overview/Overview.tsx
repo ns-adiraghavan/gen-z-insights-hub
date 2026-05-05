@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useDatasets } from "@/data/useDatasets";
 import { CoverageHeatmap } from "./CoverageHeatmap";
 import { WatchlistPanel } from "./WatchlistPanel";
+import { OverviewSummaryModules } from "./OverviewSummaryModules";
 import styles from "./Overview.module.css";
 
 interface Recommendation {
