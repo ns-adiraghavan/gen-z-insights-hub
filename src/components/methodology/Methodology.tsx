@@ -107,13 +107,17 @@ export function Methodology() {
 
         <div className={styles.amberCallout}>
           <div className={styles.calloutLabel}>Data quality note</div>
+          <p>Three keyword categories required contamination filtering before analysis:</p>
           <p>
-            Contamination was identified and removed from 3 keywords before
-            analysis: Ring Lights (49.2% of raw results were jewellery
-            'Rings' — 198 of 390 kept), Earphones (8.3% non-earphone products
-            removed), Matching Sets (10.1% non-fashion items removed). All
-            metrics in this dashboard are computed from clean rows only.
+            <strong>Ring Lights & Creator Tools:</strong> 49.2% of raw results (192 of 390 rows) were jewellery 'Rings' misclassified by Meesho's search index. Only 198 confirmed creator product rows were used for pricing and count metrics.
           </p>
+          <p>
+            <strong>Earphones & Earbuds:</strong> 8.3% of results were non-earphone products (Nail Cutters, Mobile Cases). Removed before analysis.
+          </p>
+          <p>
+            <strong>Women's Matching Sets:</strong> 10.1% of results were non-fashion items (Bangles, Watches, Perfumes). Removed before analysis.
+          </p>
+          <p>All metrics in this dashboard are computed from clean rows only. Raw counts are retained in the underlying data for audit purposes.</p>
         </div>
 
         <div className={styles.greyCallout}>
