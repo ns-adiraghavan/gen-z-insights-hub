@@ -88,9 +88,6 @@ export function SubcatDepthBar({ depthRow }: SubcatDepthBarProps) {
         </div>
       )}
 
-      {depthRow.contamination_note && (
-        <div className={styles.contamination}>{depthRow.contamination_note}</div>
-      )}
     </div>
   );
 }
