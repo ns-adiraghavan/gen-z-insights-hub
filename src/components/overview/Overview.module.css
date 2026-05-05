@@ -11,6 +11,29 @@
   flex-wrap: wrap;
 }
 .heroLeft { min-width: 0; }
+.heroBrandRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.heroLogoNs {
+  height: 26px;
+  width: auto;
+  display: block;
+}
+.heroLogoShopsy {
+  height: 32px;
+  width: auto;
+  display: block;
+  border-radius: 50%;
+}
+.heroBrandX {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: #6B7280;
+  font-weight: 400;
+}
 .heroEyebrow {
   font-family: "DM Mono", monospace;
   font-size: 10px;
