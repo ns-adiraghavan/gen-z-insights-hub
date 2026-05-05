@@ -24,10 +24,10 @@ export interface SubcatDepthBarProps {
 }
 
 const PALETTE = [
-  "#00e5a0",
+  "#FF6200",
   "#f5a524",
   "#8b9eff",
-  "#ff4757",
+  "#E53935",
   "#4ecdc4",
   "#ffe66d",
   "#a8e6cf",

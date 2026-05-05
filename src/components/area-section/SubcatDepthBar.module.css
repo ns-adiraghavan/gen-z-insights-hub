@@ -17,7 +17,7 @@
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #8892a4;
+  color: #6B7280;
   margin: 0;
 }
 
@@ -30,8 +30,8 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: 1px solid #2a2f3f;
-  color: #8892a4;
+  border: 1px solid #1A1A2E;
+  color: #6B7280;
   font-size: 8px;
   font-family: "DM Sans", sans-serif;
   cursor: help;
@@ -42,14 +42,14 @@
   position: absolute;
   top: calc(100% + 6px);
   left: 0;
-  background: #1a1d26;
-  border: 1px solid #2a2f3f;
+  background: #FFFFFF;
+  border: 1px solid #1A1A2E;
   border-radius: 4px;
   padding: 12px;
   max-width: 320px;
   width: max-content;
   font-size: 11px;
-  color: #8892a4;
+  color: #6B7280;
   line-height: 1.5;
   z-index: 30;
   display: none;
@@ -65,7 +65,7 @@
   height: 12px;
   border-radius: 3px;
   overflow: hidden;
-  background: #1e2230;
+  background: #1A1A2E;
 }
 
 .seg {
@@ -88,7 +88,7 @@
   gap: 4px;
   font-family: "DM Sans", sans-serif;
   font-size: 9px;
-  color: #8892a4;
+  color: #6B7280;
 }
 
 .dot {
@@ -100,7 +100,7 @@
 
 .legendPct {
   font-family: "DM Mono", monospace;
-  color: #e8eaf0;
+  color: #1A1A2E;
 }
 
 .contamination {

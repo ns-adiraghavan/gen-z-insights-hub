@@ -1,7 +1,7 @@
 .wrap {
   margin: 16px 0;
-  background: #12141a;
-  border: 1px solid #1e2230;
+  background: #FFFFFF;
+  border: 1px solid #1A1A2E;
   border-radius: 4px;
   padding: 16px;
 }
@@ -19,7 +19,7 @@
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #8892a4;
+  color: #6B7280;
   margin: 0;
 }
 
@@ -35,8 +35,8 @@
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  border: 1px solid #2a2f3f;
-  color: #8892a4;
+  border: 1px solid #1A1A2E;
+  color: #6B7280;
   font-size: 9px;
   font-family: "DM Sans", sans-serif;
   cursor: help;
@@ -47,14 +47,14 @@
   position: absolute;
   top: calc(100% + 6px);
   left: 0;
-  background: #1a1d26;
-  border: 1px solid #2a2f3f;
+  background: #FFFFFF;
+  border: 1px solid #1A1A2E;
   border-radius: 4px;
   padding: 12px;
   max-width: 320px;
   width: max-content;
   font-size: 11px;
-  color: #8892a4;
+  color: #6B7280;
   line-height: 1.5;
   z-index: 20;
   display: none;
@@ -82,7 +82,7 @@
 .kwName {
   font-family: "DM Sans", sans-serif;
   font-size: 12px;
-  color: #e8eaf0;
+  color: #1A1A2E;
   flex: 1;
   min-width: 0;
   white-space: nowrap;
@@ -96,17 +96,17 @@
   height: 10px;
   border-radius: 3px;
   overflow: hidden;
-  background: #1e2230;
+  background: #1A1A2E;
 }
 
-.segImpulse { background: rgba(0, 229, 160, 0.7); height: 100%; }
+.segImpulse { background: rgba(255, 98, 0, 0.7); height: 100%; }
 .segConsidered { background: #f5a524; height: 100%; }
 .segPremium { background: #3a3f52; height: 100%; }
 
 .median {
   font-family: "DM Mono", monospace;
   font-size: 11px;
-  color: #00e5a0;
+  color: #FF6200;
   min-width: 90px;
   text-align: right;
 }
@@ -117,7 +117,7 @@
   margin-top: 14px;
   font-family: "DM Sans", sans-serif;
   font-size: 10px;
-  color: #8892a4;
+  color: #6B7280;
 }
 
 .legendItem {
@@ -133,7 +133,7 @@
   display: inline-block;
 }
 
-.dotImpulse { background: rgba(0, 229, 160, 0.7); }
+.dotImpulse { background: rgba(255, 98, 0, 0.7); }
 .dotConsidered { background: #f5a524; }
 .dotPremium { background: #3a3f52; }
 
@@ -141,12 +141,12 @@
   margin-top: 8px;
   font-family: "DM Sans", sans-serif;
   font-size: 10px;
-  color: #8892a4;
+  color: #6B7280;
   font-style: italic;
 }
 
 .empty {
   font-family: "DM Sans", sans-serif;
   font-size: 12px;
-  color: #8892a4;
+  color: #6B7280;
 }

@@ -13,8 +13,8 @@
 }
 .skelBar {
   height: 14px;
-  background: #12141a;
-  border: 1px solid #1e2230;
+  background: #FFFFFF;
+  border: 1px solid #1A1A2E;
   border-radius: 3px;
 }
 .skelBar:nth-child(1) { width: 60%; }
@@ -45,8 +45,8 @@
   flex-wrap: wrap;
 }
 .chip {
-  background: #12141a;
-  border: 1px solid #1e2230;
+  background: #FFFFFF;
+  border: 1px solid #1A1A2E;
   border-radius: 4px;
   padding: 10px 12px;
   min-width: 120px;
@@ -54,14 +54,14 @@
 .chipNum {
   font-family: "DM Mono", monospace;
   font-size: 16px;
-  color: #00e5a0;
+  color: #FF6200;
   line-height: 1;
 }
 .chipLabel {
   font-family: "DM Sans", sans-serif;
   font-size: 10px;
   letter-spacing: 0.06em;
-  color: #8892a4;
+  color: #6B7280;
   margin-top: 6px;
   text-transform: uppercase;
 }
@@ -73,16 +73,16 @@
   overflow-x: auto;
   padding: 4px 2px 12px;
   scrollbar-width: thin;
-  scrollbar-color: #1e2230 transparent;
+  scrollbar-color: #1A1A2E transparent;
 }
 .cardsScroll::-webkit-scrollbar { height: 6px; }
-.cardsScroll::-webkit-scrollbar-thumb { background: #1e2230; border-radius: 3px; }
+.cardsScroll::-webkit-scrollbar-thumb { background: #1A1A2E; border-radius: 3px; }
 
 .card {
   flex: 0 0 280px;
   height: 180px;
-  background: #12141a;
-  border: 1px solid #1e2230;
+  background: #FFFFFF;
+  border: 1px solid #1A1A2E;
   border-left: 3px solid transparent;
   border-radius: 4px;
   padding: 20px;
@@ -97,7 +97,7 @@
 }
 .card:hover { background: #161922; }
 .cardActive {
-  border-left-color: #00e5a0;
+  border-left-color: #FF6200;
   background: #181b25;
 }
 .cardName {
@@ -119,10 +119,10 @@
   text-transform: uppercase;
   padding: 3px 7px;
   border-radius: 2px;
-  color: #0a0b0f;
+  color: #F5F6F8;
   font-weight: 500;
 }
-.tierVeryHigh { background: #00e5a0; }
+.tierVeryHigh { background: #FF6200; }
 .tierHigh { background: #f5a524; }
 
 .gapBadge {
@@ -131,19 +131,19 @@
   letter-spacing: 0.08em;
   font-weight: 600;
 }
-.gapUrgent { color: #ff4757; }
+.gapUrgent { color: #E53935; }
 .gapHigh { color: #f5a524; }
 
 .cardPrice {
   font-family: "DM Mono", monospace;
   font-size: 12px;
-  color: #00e5a0;
+  color: #FF6200;
   margin-top: auto;
 }
 .firstMover {
   font-family: "DM Sans", sans-serif;
   font-size: 11px;
-  color: #00e5a0;
+  color: #FF6200;
   letter-spacing: 0.04em;
 }
 
@@ -159,8 +159,8 @@
   display: flex;
   align-items: stretch;
   gap: 16px;
-  background: #12141a;
-  border: 1px solid #1e2230;
+  background: #FFFFFF;
+  border: 1px solid #1A1A2E;
   border-radius: 4px;
   padding: 16px;
 }
@@ -178,15 +178,15 @@
   text-align: center;
 }
 .priorityBadgeUrgent {
-  color: #ff4757;
-  background: rgba(255, 71, 87, 0.12);
+  color: #E53935;
+  background: rgba(229, 57, 53, 0.12);
 }
 .priorityBadgeHigh {
   color: #f5a524;
   background: rgba(245, 165, 36, 0.12);
 }
 .priorityBadgeDefault {
-  color: #8892a4;
+  color: #6B7280;
   background: rgba(136, 146, 164, 0.1);
 }
 .gapBody {
@@ -207,7 +207,7 @@
 .gapAction {
   font-family: "DM Sans", sans-serif;
   font-size: 12px;
-  color: #8892a4;
+  color: #6B7280;
   line-height: 1.5;
 }
 .fmPill {
@@ -222,20 +222,20 @@
   font-weight: 500;
 }
 .fmPillYes {
-  color: #00e5a0;
-  background: rgba(0, 229, 160, 0.12);
-  border: 1px solid rgba(0, 229, 160, 0.3);
+  color: #FF6200;
+  background: rgba(255, 98, 0, 0.12);
+  border: 1px solid rgba(255, 98, 0, 0.3);
 }
 .fmPillNo {
   color: #4a5163;
   background: transparent;
-  border: 1px solid #1e2230;
+  border: 1px solid #1A1A2E;
 }
 
 .empty {
   padding: 24px;
   text-align: center;
-  color: #8892a4;
+  color: #6B7280;
   font-family: "DM Sans", sans-serif;
   font-size: 12px;
 }
@@ -243,13 +243,13 @@
 /* ── Component 4: Provenance ── */
 .provenance {
   position: relative;
-  background: #0d0f14;
-  border: 1px solid #1e2230;
+  background: #FFFFFF;
+  border: 1px solid #1A1A2E;
   border-radius: 4px;
   padding: 10px 14px 10px 18px;
   font-family: "DM Sans", sans-serif;
   font-size: 11px;
-  color: #8892a4;
+  color: #6B7280;
   overflow: hidden;
 }
 .provenance::before {
@@ -259,5 +259,5 @@
   top: 0;
   bottom: 0;
   width: 3px;
-  background: #00e5a0;
+  background: #FF6200;
 }

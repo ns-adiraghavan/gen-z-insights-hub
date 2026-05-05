@@ -1,8 +1,8 @@
 .shell {
   display: flex;
   min-height: 100vh;
-  background: #0a0b0f;
-  color: #e8eaf0;
+  background: #F5F6F8;
+  color: #1A1A2E;
   font-family: "DM Sans", system-ui, -apple-system, sans-serif;
   font-size: 13px;
   line-height: 1.6;
@@ -13,8 +13,8 @@
   position: fixed;
   inset: 0 auto 0 0;
   width: 220px;
-  background: #0d0f14;
-  border-right: 1px solid #1e2230;
+  background: #FFFFFF;
+  border-right: 1px solid #1A1A2E;
   display: flex;
   flex-direction: column;
   padding: 20px 0;
@@ -46,7 +46,7 @@
   padding: 11px 20px 11px 17px;
   background: transparent;
   border: none;
-  color: #8892a4;
+  color: #6B7280;
   text-align: left;
   cursor: pointer;
   font-family: inherit;
@@ -56,25 +56,25 @@
   transition: color 0.15s ease, background 0.15s ease;
 }
 .navItem:hover {
-  color: #e8eaf0;
-  background: #12141a;
+  color: #1A1A2E;
+  background: #FFFFFF;
 }
 
 .navAccent {
   display: block;
   width: 3px;
   align-self: stretch;
-  background: #1e2230;
+  background: #1A1A2E;
   border-radius: 2px;
 }
 
 .navItemActive {
   color: #ffffff;
-  background: #12141a;
+  background: #FFFFFF;
 }
 .navItemActive .navAccent {
-  background: #00e5a0;
-  box-shadow: 0 0 8px rgba(0, 229, 160, 0.45);
+  background: #FF6200;
+  box-shadow: 0 0 8px rgba(255, 98, 0, 0.45);
 }
 
 .navLabel {
@@ -88,8 +88,8 @@
 .snapshot {
   margin: 16px 16px 4px;
   padding: 14px;
-  background: #12141a;
-  border: 1px solid #1e2230;
+  background: #FFFFFF;
+  border: 1px solid #1A1A2E;
   border-radius: 4px;
 }
 .snapshotLabel {
@@ -97,26 +97,26 @@
   font-size: 10px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #8892a4;
+  color: #6B7280;
   margin-bottom: 8px;
 }
 .snapshotValue {
   font-family: "DM Mono", monospace;
   font-size: 22px;
   font-weight: 500;
-  color: #00e5a0;
+  color: #FF6200;
   line-height: 1;
 }
 .snapshotMeta {
   font-family: "DM Sans", sans-serif;
   font-size: 11px;
-  color: #e8eaf0;
+  color: #1A1A2E;
   margin-top: 4px;
 }
 .snapshotMetaDim {
   font-family: "DM Sans", sans-serif;
   font-size: 11px;
-  color: #8892a4;
+  color: #6B7280;
   margin-top: 2px;
 }
 
@@ -134,8 +134,8 @@
   top: 0;
   z-index: 5;
   height: 48px;
-  background: #0d0f14;
-  border-bottom: 1px solid #1e2230;
+  background: #FFFFFF;
+  border-bottom: 1px solid #1A1A2E;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -147,7 +147,7 @@
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.01em;
-  color: #e8eaf0;
+  color: #1A1A2E;
   margin: 0;
 }
 
@@ -156,9 +156,9 @@
   font-size: 10px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #00e5a0;
-  border: 1px solid #1e2230;
-  background: #12141a;
+  color: #FF6200;
+  border: 1px solid #1A1A2E;
+  background: #FFFFFF;
   padding: 5px 10px;
   border-radius: 3px;
 }
@@ -169,7 +169,7 @@
 
 .section {
   padding: 32px 0;
-  border-top: 1px solid #1e2230;
+  border-top: 1px solid #1A1A2E;
 }
 .sectionFirst {
   border-top: none;
@@ -181,16 +181,16 @@
   font-weight: 600;
   font-size: 28px;
   letter-spacing: -0.01em;
-  color: #e8eaf0;
+  color: #1A1A2E;
   margin: 0 0 12px;
 }
 
 .placeholder {
   font-family: "DM Sans", sans-serif;
   font-size: 12px;
-  color: #8892a4;
+  color: #6B7280;
   padding: 24px;
-  background: #12141a;
-  border: 1px solid #1e2230;
+  background: #FFFFFF;
+  border: 1px solid #1A1A2E;
   border-radius: 4px;
 }
