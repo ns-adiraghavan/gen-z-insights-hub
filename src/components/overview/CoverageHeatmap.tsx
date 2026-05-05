@@ -85,10 +85,10 @@ export function CoverageHeatmap() {
       </div>
 
       <div className={styles.legendRow}>
-        <span className={`${styles.tierDot} ${styles.tierVeryHigh}`} /> Very High Gen Z demand
-        <span className={`${styles.tierDot} ${styles.tierHigh}`} /> High Gen Z demand
-        <span className={`${styles.tierDot} ${styles.tierMedium}`} /> Medium
-        <span className={`${styles.tierDot} ${styles.tierLow}`} /> Lower demand
+        <span className={`${styles.tierDot} ${styles.tierDotVeryHigh}`} /> Very High Gen Z demand
+        <span className={`${styles.tierDot} ${styles.tierDotHigh}`} /> High Gen Z demand
+        <span className={`${styles.tierDot} ${styles.tierDotMedium}`} /> Medium
+        <span className={`${styles.tierDot} ${styles.tierDotLow}`} /> Lower demand
       </div>
 
       <div className={styles.grid}>

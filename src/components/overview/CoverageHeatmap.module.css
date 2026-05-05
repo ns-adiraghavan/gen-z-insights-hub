@@ -59,10 +59,10 @@
   border-radius: 50%;
   margin-right: 4px;
 }
-.tierDot.tierVeryHigh { background: #6B35C9; }
-.tierDot.tierHigh { background: #f5a524; }
-.tierDot.tierMedium { background: #1A1A2E; }
-.tierDot.tierLow { background: #6B7280; }
+.tierDotVeryHigh { background: #6B35C9; }
+.tierDotHigh { background: #f5a524; }
+.tierDotMedium { background: #1A1A2E; }
+.tierDotLow { background: #6B7280; }
 
 .infoWrap {
   position: relative;
