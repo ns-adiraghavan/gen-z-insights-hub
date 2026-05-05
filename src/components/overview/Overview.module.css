@@ -95,16 +95,16 @@
   font-family: inherit;
   color: inherit;
 }
-.card:hover { background: #161922; }
+.card:hover { background: #F5F6F8; }
 .cardActive {
   border-left-color: #FF6200;
-  background: #181b25;
+  background: #FFF0E8;
 }
 .cardName {
   font-family: "DM Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
-  color: #ffffff;
+  color: #1A1A2E;
   line-height: 1.3;
 }
 .cardBadges {
