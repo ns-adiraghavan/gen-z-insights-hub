@@ -51,6 +51,8 @@
   cursor: pointer;
   font-family: inherit;
   font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
   transition: color 0.15s ease, background 0.15s ease;
 }
 .navItem:hover {
@@ -77,8 +79,9 @@
 
 .navLabel {
   font-family: "DM Sans", sans-serif;
-  font-size: 12px;
-  letter-spacing: 0.02em;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
 }
 
 /* ───── Snapshot ───── */
@@ -98,7 +101,7 @@
   margin-bottom: 8px;
 }
 .snapshotValue {
-  font-family: "DM Sans", sans-serif;
+  font-family: "DM Mono", monospace;
   font-size: 22px;
   font-weight: 500;
   color: #00e5a0;
@@ -175,8 +178,8 @@
 
 .sectionHeading {
   font-family: "DM Sans", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
+  font-weight: 600;
+  font-size: 28px;
   letter-spacing: -0.01em;
   color: #e8eaf0;
   margin: 0 0 12px;
