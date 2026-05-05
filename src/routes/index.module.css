@@ -22,15 +22,14 @@
 }
 
 .logo {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: -0.01em;
-  color: #ffffff;
   padding: 0 20px 24px;
+  display: flex;
+  align-items: center;
 }
-.logoDot {
-  color: #00e5a0;
+.logoImg {
+  height: 28px;
+  width: auto;
+  display: block;
 }
 
 .nav {
