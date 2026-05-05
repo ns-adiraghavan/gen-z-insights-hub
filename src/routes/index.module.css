@@ -26,10 +26,12 @@
   display: flex;
   align-items: center;
 }
-.logoImg {
-  height: 28px;
-  width: auto;
-  display: block;
+.logoMark {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: -0.01em;
+  color: #1A1A2E;
 }
 
 .nav {
