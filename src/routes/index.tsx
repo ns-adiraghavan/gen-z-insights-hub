@@ -123,8 +123,6 @@ function Index() {
               ) : null}
               {s.id === "overview" ? null : s.id === "womens-fashion" ? (
                 <WomensFashion />
-              ) : s.id === "womens-fashion" ? (
-                <WomensFashion />
               ) : s.id === "k-beauty" ? (
                 <AreaSection
                   areaId="A2"
