@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import styles from "./index.module.css";
 import { Overview } from "@/components/overview/Overview";
+import { WomensFashion } from "@/components/womens-fashion/WomensFashion";
 import netscribesLogo from "@/assets/netscribes-logo.png";
 
 export const Route = createFileRoute("/")({
@@ -90,6 +91,8 @@ function Index() {
               <h2 className={styles.sectionHeading}>{s.label}</h2>
               {s.id === "overview" ? (
                 <Overview />
+              ) : s.id === "womens-fashion" ? (
+                <WomensFashion />
               ) : (
                 <div className={styles.placeholder}>Section content coming soon.</div>
               )}
