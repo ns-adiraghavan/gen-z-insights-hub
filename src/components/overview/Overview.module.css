@@ -30,7 +30,7 @@
   padding: 20px 0 8px;
 }
 .headerStatement {
-  font-family: "Syne", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 600;
   font-size: 22px;
   line-height: 1.35;
@@ -52,13 +52,13 @@
   min-width: 120px;
 }
 .chipNum {
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   font-size: 16px;
   color: #00e5a0;
   line-height: 1;
 }
 .chipLabel {
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   font-size: 10px;
   letter-spacing: 0.06em;
   color: #8892a4;
@@ -101,7 +101,7 @@
   background: #181b25;
 }
 .cardName {
-  font-family: "Syne", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
   color: #ffffff;
@@ -113,7 +113,7 @@
   flex-wrap: wrap;
 }
 .tierBadge {
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   font-size: 10px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -126,7 +126,7 @@
 .tierHigh { background: #f5a524; }
 
 .gapBadge {
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   font-size: 10px;
   letter-spacing: 0.08em;
   font-weight: 600;
@@ -135,13 +135,13 @@
 .gapHigh { color: #f5a524; }
 
 .cardPrice {
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   font-size: 12px;
   color: #00e5a0;
   margin-top: auto;
 }
 .firstMover {
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   font-size: 11px;
   color: #00e5a0;
   letter-spacing: 0.04em;
@@ -160,7 +160,7 @@
   font-size: 12px;
 }
 .gapTable thead th {
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   font-size: 10px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -182,33 +182,33 @@
 
 .cellName { color: #ffffff; font-weight: 500; }
 .priorityUrgent {
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   color: #ff4757;
   font-weight: 600;
   font-size: 11px;
   letter-spacing: 0.06em;
 }
 .priorityHigh {
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   color: #f5a524;
   font-weight: 600;
   font-size: 11px;
   letter-spacing: 0.06em;
 }
 .priorityDefault {
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   color: #8892a4;
   font-size: 11px;
   letter-spacing: 0.06em;
 }
-.fmYes { color: #00e5a0; font-family: "DM Mono", monospace; }
+.fmYes { color: #00e5a0; font-family: "DM Sans", sans-serif; }
 .fmNo { color: #4a5163; }
 
 .empty {
   padding: 24px;
   text-align: center;
   color: #8892a4;
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   font-size: 12px;
 }
 
@@ -219,7 +219,7 @@
   border: 1px solid #1e2230;
   border-radius: 4px;
   padding: 10px 14px 10px 18px;
-  font-family: "DM Mono", monospace;
+  font-family: "DM Sans", sans-serif;
   font-size: 11px;
   color: #8892a4;
   overflow: hidden;
