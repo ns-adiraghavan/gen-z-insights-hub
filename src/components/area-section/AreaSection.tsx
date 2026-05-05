@@ -83,6 +83,17 @@ export function AreaSection({
   cardOverrides,
 }: AreaSectionProps) {
   const { data, loading } = useDatasets();
+  const [depth, setDepth] = useState<SubcatDepthRow[]>([]);
+
+  useEffect(() => {
+    let cancelled = false;
+    loadDataset<SubcatDepthRow>("subcat_depth.json.gz").then((rows) => {
+      if (!cancelled) setDepth(rows);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   if (loading) {
     return (
@@ -103,6 +114,10 @@ export function AreaSection({
   const pricingByKw = new Map<string, MeeshoPricing>();
   for (const p of pricing) {
     if (p.search_keyword) pricingByKw.set(p.search_keyword, p);
+  }
+  const depthByKw = new Map<string, SubcatDepthRow>();
+  for (const d of depth) {
+    if (d.search_keyword) depthByKw.set(d.search_keyword, d);
   }
 
   return (
