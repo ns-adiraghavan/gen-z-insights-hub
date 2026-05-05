@@ -5,6 +5,7 @@ import { Overview } from "@/components/overview/Overview";
 import { WomensFashion } from "@/components/womens-fashion/WomensFashion";
 import { AreaSection } from "@/components/area-section/AreaSection";
 import { Methodology } from "@/components/methodology/Methodology";
+import { DatasetsProvider } from "@/data/DatasetsContext";
 import netscribesLogo from "@/assets/netscribes-logo.png";
 
 export const Route = createFileRoute("/")({
@@ -69,6 +70,7 @@ function Index() {
   }, []);
 
   return (
+    <DatasetsProvider>
     <div className={styles.shell}>
       <aside className={styles.sidebar}>
         <div className={styles.logo}>
@@ -164,5 +166,6 @@ function Index() {
         </main>
       </div>
     </div>
+    </DatasetsProvider>
   );
 }
