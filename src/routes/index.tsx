@@ -36,6 +36,7 @@ const SECTIONS = [
   { id: "creator-tools", label: "Creator Tools" },
   { id: "sports-fitness", label: "Sports & Fitness" },
   { id: "jewellery", label: "Jewellery & Accessories" },
+  { id: "methodology", label: "Methodology" },
 ] as const;
 
 function Index() {
