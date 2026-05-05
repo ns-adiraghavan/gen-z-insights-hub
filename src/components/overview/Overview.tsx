@@ -35,12 +35,20 @@ function gapBadgeClass(p?: string) {
   return "";
 }
 
-function priorityCellClass(p?: string) {
-  if (!p) return styles.priorityDefault;
+const AREA_TO_SECTION: Record<string, string> = {
+  A1: "womens-fashion",
+  A2: "k-beauty",
+  A3: "creator-tools",
+  A4: "sports-fitness",
+  A5: "jewellery",
+};
+
+function priorityBadgeClass(p?: string) {
+  if (!p) return styles.priorityBadgeDefault;
   const u = p.toUpperCase();
-  if (u === "URGENT") return styles.priorityUrgent;
-  if (u === "HIGH") return styles.priorityHigh;
-  return styles.priorityDefault;
+  if (u === "URGENT") return styles.priorityBadgeUrgent;
+  if (u === "HIGH") return styles.priorityBadgeHigh;
+  return styles.priorityBadgeDefault;
 }
 
 export function Overview() {
@@ -92,7 +100,13 @@ export function Overview() {
               <button
                 type="button"
                 key={r.area_id ?? i}
-                onClick={() => setActiveIdx(i)}
+                onClick={() => {
+                  setActiveIdx(i);
+                  const sectionId = r.area_id ? AREA_TO_SECTION[r.area_id] : undefined;
+                  if (sectionId) {
+                    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }
+                }}
                 className={`${styles.card} ${i === activeIdx ? styles.cardActive : ""}`}
               >
                 <div className={styles.cardName}>{r.area_name ?? "—"}</div>
@@ -123,38 +137,29 @@ export function Overview() {
       )}
 
       {/* COMPONENT 3 */}
-      <div className={styles.tableWrap}>
+      <div className={styles.gapList}>
         {gaps.length > 0 ? (
-          <table className={styles.gapTable}>
-            <thead>
-              <tr>
-                <th>Gap Name</th>
-                <th>Priority</th>
-                <th>First Mover Opportunity</th>
-                <th>Recommended Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              {gaps.map((g, i) => (
-                <tr key={i}>
-                  <td className={styles.cellName}>{g.gap_name ?? "—"}</td>
-                  <td>
-                    <span className={priorityCellClass(g.priority)}>
-                      {g.priority ? g.priority.toUpperCase() : "—"}
-                    </span>
-                  </td>
-                  <td>
-                    {g.first_mover_opportunity === true ? (
-                      <span className={styles.fmYes}>✓</span>
-                    ) : (
-                      <span className={styles.fmNo}>—</span>
-                    )}
-                  </td>
-                  <td>{g.recommended_action ?? "—"}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          gaps.map((g, i) => {
+            const label = g.priority ? g.priority.toUpperCase() : "—";
+            return (
+              <div key={i} className={styles.gapCard}>
+                <div className={`${styles.priorityBadge} ${priorityBadgeClass(g.priority)}`}>
+                  {label}
+                </div>
+                <div className={styles.gapBody}>
+                  <div className={styles.gapName}>{g.gap_name ?? "—"}</div>
+                  <div className={styles.gapAction}>{g.recommended_action ?? "—"}</div>
+                </div>
+                <div
+                  className={`${styles.fmPill} ${
+                    g.first_mover_opportunity === true ? styles.fmPillYes : styles.fmPillNo
+                  }`}
+                >
+                  {g.first_mover_opportunity === true ? "✓ First mover" : "—"}
+                </div>
+              </div>
+            );
+          })
         ) : (
           <div className={styles.empty}>No Shopsy coverage gap data available.</div>
         )}
