@@ -57,20 +57,20 @@
 }
 .navItem:hover {
   color: #1A1A2E;
-  background: #FFFFFF;
+  background: #F5F6F8;
 }
 
 .navAccent {
   display: block;
   width: 3px;
   align-self: stretch;
-  background: #1A1A2E;
+  background: transparent;
   border-radius: 2px;
 }
 
 .navItemActive {
-  color: #ffffff;
-  background: #FFFFFF;
+  color: #FF6200;
+  background: #FFF0E8;
 }
 .navItemActive .navAccent {
   background: #FF6200;
