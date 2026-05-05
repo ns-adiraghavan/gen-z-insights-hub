@@ -117,10 +117,7 @@ function Index() {
               className={`${styles.section} ${i === 0 ? styles.sectionFirst : ""}`}
             >
               {s.id === "overview" ? (
-                <>
-                  <h2 className={styles.sectionHeading}>{s.label}</h2>
-                  <Overview />
-                </>
+                <Overview />
               ) : null}
               {s.id === "overview" ? null : s.id === "womens-fashion" ? (
                 <WomensFashion />
