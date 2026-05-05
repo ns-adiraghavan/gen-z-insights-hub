@@ -3,8 +3,6 @@ import { useDatasets } from "@/data/useDatasets";
 import { CoverageHeatmap } from "./CoverageHeatmap";
 import { WatchlistPanel } from "./WatchlistPanel";
 import { OverviewSummaryModules } from "./OverviewSummaryModules";
-import netscribesLogo from "@/assets/netscribes-logo.png";
-import shopsyLogo from "@/assets/shopsy-logo.png";
 import styles from "./Overview.module.css";
 
 interface Recommendation {
