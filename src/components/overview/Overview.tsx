@@ -139,6 +139,8 @@ export function Overview() {
         <div className={styles.empty}>No recommendations data available.</div>
       )}
 
+      <OverviewSummaryModules />
+
       {/* COMPONENT 3 */}
       <div className={styles.gapList}>
         {gaps.length > 0 ? (
