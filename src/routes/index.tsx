@@ -166,5 +166,6 @@ function Index() {
         </main>
       </div>
     </div>
+    </DatasetsProvider>
   );
 }
