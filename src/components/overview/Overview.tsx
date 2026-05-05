@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useDatasets } from "@/data/useDatasets";
 import { CoverageHeatmap } from "./CoverageHeatmap";
 import { WatchlistPanel } from "./WatchlistPanel";
+import { OverviewSummaryModules } from "./OverviewSummaryModules";
 import styles from "./Overview.module.css";
 
 interface Recommendation {
@@ -137,6 +138,8 @@ export function Overview() {
       ) : (
         <div className={styles.empty}>No recommendations data available.</div>
       )}
+
+      <OverviewSummaryModules />
 
       {/* COMPONENT 3 */}
       <div className={styles.gapList}>
