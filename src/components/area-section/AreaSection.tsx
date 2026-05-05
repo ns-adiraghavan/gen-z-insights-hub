@@ -152,6 +152,8 @@ export function AreaSection({
         </div>
       </div>
 
+      <DecisionCallout areaId={areaId} />
+
       {/* Callout */}
       {callout && <div className={styles.callout}>{callout}</div>}
 
