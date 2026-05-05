@@ -1,16 +1,17 @@
 import styles from "./Methodology.module.css";
 
-const PRIMARY = [
-  "YouGov / GCI Magazine 2025 — Commissioned primary survey. India-specific. 18–29 age group. Source of the 34% K-beauty stat.",
-  "Meesho Live Product Scrape — April 2026. 7,459 products across 19 keyword categories. ~400 products per keyword.",
+const OUR_DATA = [
+  "Meesho Live Product Scrape — April 2026. 7,459 products across 19 keyword categories, ~400 products per keyword. Fields: product name, subcategory, min catalogue price, review count, rating, assurance badge.",
+  "NS Category Audit — April 2026. 240 subcategories manually mapped across 20 category groups. Each subcategory classified as Both / Shopsy Only / Meesho Only by the NS research team.",
 ];
-const INDUSTRY = [
-  "Bain & Company 2025, RedSeer 2025, IBEF 2025, IDC India 2025, NielsenIQ 2025, McKinsey, IMARC, Mintel",
+const PRIMARY_SURVEY = [
+  "YouGov / GCI Magazine 2025 — Commissioned primary survey, India-specific, 18–29 age group. This is the source of the 34% K-beauty statistic. Independent of NS — included as the strongest available primary human evidence in the dataset.",
 ];
-const TRADE = [
-  "Meesho Smart Shopper Report H1 2024, Shiprocket, imagesBOF, Printrove, Glance.com",
+const INDUSTRY_TRADE = [
+  "Industry Research (high confidence): Bain & Company 2025, RedSeer 2025, IBEF 2025, IDC India 2025, NielsenIQ 2025, McKinsey, IMARC, Mintel",
+  "Trade & Platform Intelligence: Meesho Smart Shopper Report H1 2024, Shiprocket, imagesBOF, Printrove, Glance.com",
+  "Directional only (context, not primary evidence): KPMG India blog, Outlook Business / Deloitte",
 ];
-const DIRECTIONAL = ["KPMG India blog, Outlook Business / Deloitte"];
 
 const SCRAPE_FIELDS: { label: string; value: string }[] = [
   { label: "Scrape date", value: "April 2026" },
