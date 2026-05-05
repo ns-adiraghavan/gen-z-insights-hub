@@ -1,4 +1,5 @@
 import { useDatasets } from "@/data/useDatasets";
+import { PriceZonePanel } from "./PriceZonePanel";
 import styles from "./AreaSection.module.css";
 
 interface Recommendation {
@@ -133,6 +134,8 @@ export function AreaSection({
 
       {/* Callout */}
       {callout && <div className={styles.callout}>{callout}</div>}
+
+      <PriceZonePanel areaId={areaId} signals={signals} pricingByKw={pricingByKw} />
 
       {/* COMPONENT 2 — Subcategory grid */}
       {signals.length > 0 ? (
