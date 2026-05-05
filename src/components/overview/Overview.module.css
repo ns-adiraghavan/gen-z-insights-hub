@@ -1,3 +1,66 @@
+.hero {
+  background: #FFFFFF;
+  border: 1px solid #E8EAF0;
+  border-bottom: 3px solid #6B35C9;
+  border-radius: 6px;
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.heroLeft { min-width: 0; }
+.heroEyebrow {
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #6B35C9;
+  margin-bottom: 6px;
+}
+.heroTitle {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: #1A1A2E;
+  margin: 0 0 6px;
+  letter-spacing: -0.01em;
+}
+.heroSubtitle {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  color: #6B7280;
+  margin: 0;
+}
+.heroStats {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.heroStat { min-width: 80px; }
+.heroStatNum {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #6B35C9;
+  line-height: 1.1;
+}
+.heroStatLabel {
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  color: #6B7280;
+  margin-top: 2px;
+}
+.priorityBasis {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  color: #6B7280;
+  margin: 0;
+}
+
 .wrap {
   display: flex;
   flex-direction: column;
