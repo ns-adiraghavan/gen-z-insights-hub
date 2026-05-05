@@ -70,6 +70,7 @@ function Index() {
   }, []);
 
   return (
+    <DatasetsProvider>
     <div className={styles.shell}>
       <aside className={styles.sidebar}>
         <div className={styles.logo}>
