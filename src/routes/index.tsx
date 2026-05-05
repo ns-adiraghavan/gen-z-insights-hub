@@ -139,7 +139,6 @@ function Index() {
                   cardOverrides={{
                     "Ring Lights & Creator Accessories": {
                       cleanProductCount: 198,
-                      footnote: "49% of raw results filtered — jewellery contamination removed",
                     },
                   }}
                 />
