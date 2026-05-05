@@ -154,18 +154,15 @@
 
 /* ── Component 2: Recommendation cards ── */
 .cardsScroll {
-  display: flex;
-  gap: 12px;
-  overflow-x: auto;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
   padding: 4px 2px 12px;
-  scrollbar-width: thin;
-  scrollbar-color: #1A1A2E transparent;
 }
-.cardsScroll::-webkit-scrollbar { height: 6px; }
-.cardsScroll::-webkit-scrollbar-thumb { background: #1A1A2E; border-radius: 3px; }
 
 .card {
-  flex: 0 0 280px;
+  width: 100%;
+  min-width: 0;
   height: 180px;
   background: #FFFFFF;
   border: 1px solid #E8EAF0;
