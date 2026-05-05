@@ -198,8 +198,9 @@ export function AreaSection({
                       />
                     </div>
                     <div className={styles.priceBarLabels}>
-                      <span>₹{min}</span>
-                      <span>₹{max}</span>
+                      <span>₹{min} <span className={styles.priceBarLabelHint}>cheapest</span></span>
+                      <span className={styles.priceBarLabelHint}>▓ = middle 50% of products</span>
+                      <span><span className={styles.priceBarLabelHint}>priciest</span> ₹{max}</span>
                     </div>
                   </div>
                 )}

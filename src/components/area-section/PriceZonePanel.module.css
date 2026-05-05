@@ -8,24 +8,31 @@
 
 .titleRow {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
   margin-bottom: 12px;
 }
 
 .title {
   font-family: "DM Sans", sans-serif;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  color: #1A1A2E;
+  margin: 0 0 3px;
+}
+
+.titleNote {
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
   color: #6B7280;
   margin: 0;
+  line-height: 1.4;
 }
 
 .infoWrap {
   position: relative;
   display: inline-flex;
+  flex-shrink: 0;
 }
 
 .infoIcon {
@@ -69,14 +76,14 @@
 .rows {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .row {
   display: flex;
   align-items: center;
   gap: 12px;
-  height: 28px;
+  height: 32px;
 }
 
 .kwName {
@@ -92,16 +99,42 @@
 
 .bar {
   display: flex;
-  width: 160px;
-  height: 10px;
+  width: 200px;
+  height: 18px;
   border-radius: 3px;
   overflow: hidden;
-  background: #1A1A2E;
+  background: #E8EAF0;
 }
 
-.segImpulse { background: rgba(107, 53, 201, 0.7); height: 100%; }
-.segConsidered { background: #f5a524; height: 100%; }
-.segPremium { background: #3a3f52; height: 100%; }
+.segImpulse {
+  background: rgba(107, 53, 201, 0.75);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.segConsidered {
+  background: #f5a524;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.segPremium {
+  background: #3a3f52;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.segLabel {
+  font-family: "DM Mono", monospace;
+  font-size: 9px;
+  color: #FFFFFF;
+  padding: 0 3px;
+  white-space: nowrap;
+}
 
 .median {
   font-family: "DM Mono", monospace;
@@ -116,8 +149,9 @@
   gap: 18px;
   margin-top: 14px;
   font-family: "DM Sans", sans-serif;
-  font-size: 10px;
+  font-size: 11px;
   color: #6B7280;
+  flex-wrap: wrap;
 }
 
 .legendItem {
@@ -127,13 +161,14 @@
 }
 
 .dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
   display: inline-block;
+  flex-shrink: 0;
 }
 
-.dotImpulse { background: rgba(107, 53, 201, 0.7); }
+.dotImpulse { background: rgba(107, 53, 201, 0.75); }
 .dotConsidered { background: #f5a524; }
 .dotPremium { background: #3a3f52; }
 

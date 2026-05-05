@@ -29,18 +29,18 @@ export function PriceZonePanel({ areaId, signals, pricingByKw }: PriceZonePanelP
   return (
     <div className={styles.wrap}>
       <div className={styles.titleRow}>
-        <h4 className={styles.title}>
-          Meesho Price Zone Distribution — {totalProducts.toLocaleString()} products
-        </h4>
+        <div>
+          <h4 className={styles.title}>
+            Where does Meesho price this category? — {totalProducts.toLocaleString()} products scraped
+          </h4>
+          <p className={styles.titleNote}>
+            Each bar shows the share of products at each price band. Longer bar segment = more products in that range. Median price shown as the typical item a shopper sees.
+          </p>
+        </div>
         <span className={styles.infoWrap} tabIndex={0}>
           <span className={styles.infoIcon} aria-label="More info">i</span>
           <span className={styles.tooltip} role="tooltip">
-            Source: Meesho live scrape, April 2026. Price zones are computed from
-            min_catalog_price field across all clean (contamination-filtered) products
-            per subcategory. &lt;₹200 = impulse zone (low-friction first purchase).
-            ₹200–₹500 = considered zone (comparison shopping likely). ₹500+ = premium
-            zone (brand or quality signal needed). Shopsy pricing data is not available
-            — Meesho data shown as competitive benchmark only.
+            Source: Meesho live scrape, April 2026. Price zones computed from min_catalog_price across all clean (contamination-filtered) products per subcategory. Impulse (&lt;₹200) = low-friction first purchase, high impulse rate. Considered (₹200–₹500) = comparison shopping likely, brand matters. Premium (₹500+) = quality or brand signal required. Shopsy pricing not available — Meesho shown as competitive benchmark only.
           </span>
         </span>
       </div>
@@ -58,21 +58,33 @@ export function PriceZonePanel({ areaId, signals, pricingByKw }: PriceZonePanelP
               <div key={s.search_keyword ?? i} className={styles.row}>
                 <span className={styles.kwName}>{s.search_keyword ?? "—"}</span>
                 <div className={styles.bar}>
-                  <div
-                    className={styles.segImpulse}
-                    style={{ width: `${u}%` }}
-                    title={`<₹200: ${u}%`}
-                  />
-                  <div
-                    className={styles.segConsidered}
-                    style={{ width: `${m}%` }}
-                    title={`₹200–500: ${m}%`}
-                  />
-                  <div
-                    className={styles.segPremium}
-                    style={{ width: `${h}%` }}
-                    title={`₹500+: ${h}%`}
-                  />
+                  {u > 0 && (
+                    <div
+                      className={styles.segImpulse}
+                      style={{ width: `${u}%` }}
+                      title={`Under ₹200: ${u}%`}
+                    >
+                      {u >= 12 && <span className={styles.segLabel}>{u}%</span>}
+                    </div>
+                  )}
+                  {m > 0 && (
+                    <div
+                      className={styles.segConsidered}
+                      style={{ width: `${m}%` }}
+                      title={`₹200–500: ${m}%`}
+                    >
+                      {m >= 12 && <span className={styles.segLabel}>{m}%</span>}
+                    </div>
+                  )}
+                  {h > 0 && (
+                    <div
+                      className={styles.segPremium}
+                      style={{ width: `${h}%` }}
+                      title={`₹500+: ${h}%`}
+                    >
+                      {h >= 12 && <span className={styles.segLabel}>{h}%</span>}
+                    </div>
+                  )}
                 </div>
                 <span className={styles.median}>
                   {typeof p?.median_price_inr === "number"
