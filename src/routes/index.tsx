@@ -72,7 +72,7 @@ function Index() {
     <div className={styles.shell}>
       <aside className={styles.sidebar}>
         <div className={styles.logo}>
-          <span className={styles.logoMark}>Gen Z Insights</span>
+          <img src={netscribesLogo} alt="Netscribes" className={styles.logoImg} />
         </div>
 
         <nav className={styles.nav}>
