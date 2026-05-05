@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import styles from "./index.module.css";
 import { Overview } from "@/components/overview/Overview";
+import netscribesLogo from "@/assets/netscribes-logo.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -19,7 +20,7 @@ export const Route = createFileRoute("/")({
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@500;600;700;800&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap",
       },
     ],
   }),
@@ -41,7 +42,7 @@ function Index() {
     <div className={styles.shell}>
       <aside className={styles.sidebar}>
         <div className={styles.logo}>
-          netscribes<span className={styles.logoDot}>.</span>
+          <img src={netscribesLogo} alt="Netscribes" className={styles.logoImg} />
         </div>
 
         <nav className={styles.nav}>
