@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDatasets } from "@/data/useDatasets";
 import { CoverageHeatmap } from "./CoverageHeatmap";
+import { WatchlistPanel } from "./WatchlistPanel";
 import styles from "./Overview.module.css";
 
 interface Recommendation {
@@ -172,6 +173,7 @@ export function Overview() {
         evidence-tiered per source quality · Shopsy pricing: not available in this dataset
       </div>
 
+      <WatchlistPanel />
       <CoverageHeatmap />
     </div>
   );
