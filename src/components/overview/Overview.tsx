@@ -78,11 +78,6 @@ export function Overview() {
       {/* HERO HEADER */}
       <div className={styles.hero}>
         <div className={styles.heroLeft}>
-          <div className={styles.heroBrandRow}>
-            <img src={netscribesLogo} alt="Netscribes" className={styles.heroLogoNs} />
-            <span className={styles.heroBrandX}>×</span>
-            <img src={shopsyLogo} alt="Shopsy" className={styles.heroLogoShopsy} />
-          </div>
           <h1 className={styles.heroTitle}>The Gen Z Opportunity</h1>
           <p className={styles.heroSubtitle}>
             5 data-backed investment recommendations for Shopsy's Gen Z catalogue strategy
