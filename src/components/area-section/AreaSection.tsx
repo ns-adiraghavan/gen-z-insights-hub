@@ -221,6 +221,11 @@ export function AreaSection({
                   </div>
                 )}
 
+                <SubcatDepthBar
+                  keyword={s.search_keyword ?? ""}
+                  depthRow={depthByKw.get(s.search_keyword ?? "")}
+                />
+
                 <div className={styles.cardFooter}>
                   {typeof cleanCount === "number"
                     ? `${cleanCount.toLocaleString()} Meesho products`
