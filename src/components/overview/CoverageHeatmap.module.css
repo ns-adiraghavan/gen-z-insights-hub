@@ -1,0 +1,154 @@
+.wrap {
+  margin-top: 24px;
+  background: #12141a;
+  border: 1px solid #1e2230;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8892a4;
+  margin: 0;
+}
+
+.infoWrap {
+  position: relative;
+  display: inline-flex;
+}
+
+.infoIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #2a2f3f;
+  color: #8892a4;
+  font-size: 9px;
+  font-family: "DM Sans", sans-serif;
+  cursor: help;
+  background: transparent;
+  padding: 0;
+  line-height: 1;
+}
+
+.tooltip {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  background: #1a1d26;
+  border: 1px solid #2a2f3f;
+  border-radius: 4px;
+  padding: 12px;
+  max-width: 320px;
+  width: max-content;
+  font-size: 11px;
+  color: #8892a4;
+  line-height: 1.5;
+  z-index: 20;
+  display: none;
+  font-family: "DM Sans", sans-serif;
+}
+
+.infoWrap:hover .tooltip,
+.infoWrap:focus-within .tooltip {
+  display: block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 24px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  padding: 0 12px;
+  background: #0d0f14;
+  border-bottom: 1px solid #1a1d26;
+  gap: 12px;
+}
+
+.catName {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  max-width: 160px;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tierVeryHigh { color: #00e5a0; }
+.tierHigh { color: #f5a524; }
+.tierMedium { color: #e8eaf0; }
+.tierLow { color: #8892a4; }
+
+.barWrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bar {
+  width: 120px;
+  height: 8px;
+  border-radius: 2px;
+  background: #1e2230;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background: rgba(0, 229, 160, 0.7);
+  border-radius: 2px;
+}
+
+.pct {
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  color: #00e5a0;
+  min-width: 24px;
+}
+
+.gapPill {
+  font-family: "DM Mono", monospace;
+  font-size: 9px;
+  background: rgba(255, 71, 87, 0.12);
+  color: #ff4757;
+  border: 1px solid rgba(255, 71, 87, 0.3);
+  border-radius: 10px;
+  padding: 1px 5px;
+  margin-left: auto;
+}
+
+.gapSpacer {
+  margin-left: auto;
+}
+
+.provenance {
+  margin-top: 12px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  color: #8892a4;
+}

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useDatasets } from "@/data/useDatasets";
+import { CoverageHeatmap } from "./CoverageHeatmap";
 import styles from "./Overview.module.css";
 
 interface Recommendation {
@@ -170,6 +171,8 @@ export function Overview() {
         Meesho pricing data: live scrape April 2026 · Gen Z signal tiers: NS Research,
         evidence-tiered per source quality · Shopsy pricing: not available in this dataset
       </div>
+
+      <CoverageHeatmap />
     </div>
   );
 }
