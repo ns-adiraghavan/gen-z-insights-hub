@@ -3,6 +3,8 @@ import { useDatasets } from "@/data/useDatasets";
 import { loadDataset } from "@/data/loadData";
 import { PriceZonePanel } from "./PriceZonePanel";
 import { SubcatDepthBar, type SubcatDepthRow } from "./SubcatDepthBar";
+import { DecisionCallout } from "./DecisionCallout";
+import { KeywordPanel } from "./KeywordPanel";
 import styles from "./AreaSection.module.css";
 
 interface Recommendation {
