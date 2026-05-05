@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import styles from "./index.module.css";
+import { Overview } from "@/components/overview/Overview";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -86,7 +87,11 @@ function Index() {
               className={`${styles.section} ${i === 0 ? styles.sectionFirst : ""}`}
             >
               <h2 className={styles.sectionHeading}>{s.label}</h2>
-              <div className={styles.placeholder}>Section content coming soon.</div>
+              {s.id === "overview" ? (
+                <Overview />
+              ) : (
+                <div className={styles.placeholder}>Section content coming soon.</div>
+              )}
             </section>
           ))}
         </main>
