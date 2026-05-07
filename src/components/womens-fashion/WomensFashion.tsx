@@ -97,13 +97,9 @@ export function WomensFashion() {
             </div>
           </div>
           <div className={styles.chip}>
-            <div className={styles.chipLabel}>Promotion Priority</div>
+            <div className={styles.chipLabel}>Strategic Type</div>
             <div className={`${styles.chipValue} ${styles.chipValueUrgent}`}>
-              {rec?.gap_priority?.toUpperCase() === "URGENT"
-                ? "Launch Now"
-                : rec?.gap_priority?.toUpperCase() === "HIGH"
-                ? "Close Gap"
-                : rec?.gap_priority ?? "—"}
+              {rec?.gap_priority ?? "—"}
             </div>
           </div>
         </div>
