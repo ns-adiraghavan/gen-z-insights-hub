@@ -47,9 +47,9 @@ const AREA_TO_SECTION: Record<string, string> = {
 
 function priorityBadgeClass(p?: string) {
   if (!p) return styles.priorityBadgeDefault;
-  const u = p.toUpperCase();
-  if (u === "URGENT") return styles.priorityBadgeUrgent;
-  if (u === "HIGH") return styles.priorityBadgeHigh;
+  const l = p.toLowerCase();
+  if (l === "whitespace") return styles.priorityBadgeUrgent;
+  if (l === "visibility gap") return styles.priorityBadgeHigh;
   return styles.priorityBadgeDefault;
 }
 
