@@ -31,9 +31,9 @@ function tierClass(tier?: string) {
 
 function gapBadgeClass(p?: string) {
   if (!p) return "";
-  const u = p.toUpperCase();
-  if (u === "URGENT") return styles.gapUrgent;
-  if (u === "HIGH") return styles.gapHigh;
+  const l = p.toLowerCase();
+  if (l === "whitespace") return styles.gapUrgent;
+  if (l === "visibility gap") return styles.gapHigh;
   return "";
 }
 
@@ -47,9 +47,9 @@ const AREA_TO_SECTION: Record<string, string> = {
 
 function priorityBadgeClass(p?: string) {
   if (!p) return styles.priorityBadgeDefault;
-  const u = p.toUpperCase();
-  if (u === "URGENT") return styles.priorityBadgeUrgent;
-  if (u === "HIGH") return styles.priorityBadgeHigh;
+  const l = p.toLowerCase();
+  if (l === "whitespace") return styles.priorityBadgeUrgent;
+  if (l === "visibility gap") return styles.priorityBadgeHigh;
   return styles.priorityBadgeDefault;
 }
 
@@ -96,12 +96,20 @@ export function Overview({ onNavigate }: { onNavigate?: (sectionId: string) => v
 
       <div className={styles.priorityBasisBlock}>
         <div className={styles.priorityDefRow}>
-          <span className={styles.priorityDefBadgeUrgent}>URGENT</span>
-          <span className={styles.priorityDefText}>Neither Shopsy nor Meesho has this section yet — genuine first-mover whitespace with strong Gen Z demand evidence</span>
+          <span className={styles.priorityDefBadgeUrgent}>Whitespace</span>
+          <span className={styles.priorityDefText}>No dedicated section on either platform — first-mover opportunity</span>
         </div>
         <div className={styles.priorityDefRow}>
-          <span className={styles.priorityDefBadgeHigh}>HIGH</span>
-          <span className={styles.priorityDefText}>Meesho already has this section; Shopsy does not — Shopsy is losing ground to a live competitor</span>
+          <span className={styles.priorityDefBadgeHigh}>Visibility Gap</span>
+          <span className={styles.priorityDefText}>Products exist on Shopsy but are buried — no dedicated discovery surface</span>
+        </div>
+        <div className={styles.priorityDefRow}>
+          <span className={styles.priorityDefBadgeDefault}>Shopsy Leads</span>
+          <span className={styles.priorityDefText}>Shopsy has stronger coverage than Meesho here — defend and promote</span>
+        </div>
+        <div className={styles.priorityDefRow}>
+          <span className={styles.priorityDefBadgeDefault}>Competitive Gap</span>
+          <span className={styles.priorityDefText}>Meesho has a dedicated section; Shopsy does not</span>
         </div>
       </div>
 
@@ -128,7 +136,7 @@ export function Overview({ onNavigate }: { onNavigate?: (sectionId: string) => v
                   )}
                   {r.gap_priority && (
                     <span className={`${styles.gapBadge} ${gapBadgeClass(r.gap_priority)}`}>
-                      {r.gap_priority.toUpperCase()}
+                      {r.gap_priority}
                     </span>
                   )}
                 </div>
