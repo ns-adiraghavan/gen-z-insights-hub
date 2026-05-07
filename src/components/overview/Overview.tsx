@@ -31,9 +31,9 @@ function tierClass(tier?: string) {
 
 function gapBadgeClass(p?: string) {
   if (!p) return "";
-  const u = p.toUpperCase();
-  if (u === "URGENT") return styles.gapUrgent;
-  if (u === "HIGH") return styles.gapHigh;
+  const l = p.toLowerCase();
+  if (l === "whitespace") return styles.gapUrgent;
+  if (l === "visibility gap") return styles.gapHigh;
   return "";
 }
 
