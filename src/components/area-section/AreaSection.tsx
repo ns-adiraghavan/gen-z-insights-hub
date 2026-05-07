@@ -59,9 +59,11 @@ function tierClass(tier?: string) {
 }
 function priorityValueClass(p?: string) {
   if (!p) return "";
-  const u = p.toUpperCase();
-  if (u === "URGENT") return styles.chipValueUrgent;
-  if (u === "HIGH") return styles.chipValueHigh;
+  const l = p.toLowerCase();
+  if (l === "whitespace") return styles.chipValueUrgent;
+  if (l === "visibility gap") return styles.chipValueUrgent;
+  if (l === "shopsy leads") return styles.chipValueHigh;
+  if (l === "competitive gap") return styles.chipValueHigh;
   return "";
 }
 function pct(value: number, min: number, max: number) {
