@@ -96,12 +96,20 @@ export function Overview({ onNavigate }: { onNavigate?: (sectionId: string) => v
 
       <div className={styles.priorityBasisBlock}>
         <div className={styles.priorityDefRow}>
-          <span className={styles.priorityDefBadgeUrgent}>URGENT</span>
-          <span className={styles.priorityDefText}>Neither Shopsy nor Meesho has this section yet — genuine first-mover whitespace with strong Gen Z demand evidence</span>
+          <span className={styles.priorityDefBadgeUrgent}>Whitespace</span>
+          <span className={styles.priorityDefText}>No dedicated section on either platform — first-mover opportunity</span>
         </div>
         <div className={styles.priorityDefRow}>
-          <span className={styles.priorityDefBadgeHigh}>HIGH</span>
-          <span className={styles.priorityDefText}>Meesho already has this section; Shopsy does not — Shopsy is losing ground to a live competitor</span>
+          <span className={styles.priorityDefBadgeHigh}>Visibility Gap</span>
+          <span className={styles.priorityDefText}>Products exist on Shopsy but are buried — no dedicated discovery surface</span>
+        </div>
+        <div className={styles.priorityDefRow}>
+          <span className={styles.priorityDefBadgeDefault}>Shopsy Leads</span>
+          <span className={styles.priorityDefText}>Shopsy has stronger coverage than Meesho here — defend and promote</span>
+        </div>
+        <div className={styles.priorityDefRow}>
+          <span className={styles.priorityDefBadgeDefault}>Competitive Gap</span>
+          <span className={styles.priorityDefText}>Meesho has a dedicated section; Shopsy does not</span>
         </div>
       </div>
 
