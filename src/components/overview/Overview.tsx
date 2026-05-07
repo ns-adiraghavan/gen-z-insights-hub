@@ -136,7 +136,7 @@ export function Overview({ onNavigate }: { onNavigate?: (sectionId: string) => v
                   )}
                   {r.gap_priority && (
                     <span className={`${styles.gapBadge} ${gapBadgeClass(r.gap_priority)}`}>
-                      {r.gap_priority.toUpperCase()}
+                      {r.gap_priority}
                     </span>
                   )}
                 </div>
