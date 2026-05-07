@@ -37,7 +37,7 @@ export function LoginGate({ children }: { children: ReactNode }) {
     <div className={styles.wrap}>
       <form className={styles.card} onSubmit={handleSubmit}>
         <img src={netscribesLogo} alt="Netscribes" className={styles.logo} />
-        <h1 className={styles.title}>Gen Z Opportunity — Shopsy POC</h1>
+        <h1 className={`${styles.title} text-lg text-center`}>NS x Shopsy: Gen Z Recommendations</h1>
         <p className={styles.subtitle}>Sign in to continue</p>
 
         <label className={styles.label}>
