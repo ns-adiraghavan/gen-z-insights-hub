@@ -79,8 +79,27 @@ function Index() {
       </aside>
 
       <div className={styles.mainCol}>
-        <header className={styles.topbar}>
+        <header className={styles.topbar} style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           <span className={styles.breadcrumb}>Netscribes × Shopsy POC</span>
+          <button
+            type="button"
+            onClick={() => {
+              sessionStorage.removeItem("shopsy_poc_auth");
+              window.location.reload();
+            }}
+            style={{
+              background: "transparent",
+              border: "1px solid #E8EAF0",
+              borderRadius: 6,
+              padding: "6px 12px",
+              fontSize: 12,
+              fontWeight: 500,
+              color: "#1A1A2E",
+              cursor: "pointer",
+            }}
+          >
+            Log out
+          </button>
         </header>
 
         <main className={styles.content}>
