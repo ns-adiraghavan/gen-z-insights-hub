@@ -82,57 +82,50 @@ function Index() {
         </header>
 
         <main className={styles.content}>
-          {SECTIONS.map((s, i) => (
-            <section
-              key={s.id}
-              id={s.id}
-              className={`${styles.section} ${i === 0 ? styles.sectionFirst : ""}`}
-            >
-              {s.id === "overview" ? (
-                <Overview />
-              ) : null}
-              {s.id === "overview" ? null : s.id === "womens-fashion" ? (
-                <WomensFashion />
-              ) : s.id === "k-beauty" ? (
-                <AreaSection
-                  areaId="A2"
-                  title="K-Beauty & Skincare Routines"
-                  callout="34% of Indian Gen Z actively exploring Korean skincare — YouGov/GCI Magazine 2025"
-                />
-              ) : s.id === "creator-tools" ? (
-                <AreaSection
-                  areaId="A3"
-                  title="Creator Tools & Consumer Electronics"
-                  callout="Ring lights were Meesho's #1 electronics category search item H1 2024, driven entirely by Gen Z content creators — Meesho Smart Shopper Report"
-                  cardOverrides={{
-                    "Ring Lights & Creator Accessories": {
-                      cleanProductCount: 198,
-                    },
-                  }}
-                />
-              ) : s.id === "sports-fitness" ? (
-                <AreaSection
-                  areaId="A4"
-                  title="Sports, Fitness & Athleisure"
-                  callout="1-in-3 Gen Z consumers allocates more than 20% of their income to fitness-related activities — Outlook Luxe / RedSeer 2026"
-                  showShopsyAdvantage
-                />
-              ) : s.id === "jewellery" ? (
-                <AreaSection
-                  areaId="A5"
-                  title="Jewellery & Accessories"
-                  callout="Artificial jewellery market growing at CAGR 11.4% (2025–29), driven by affordability and online access among younger consumers — IBEF 2025"
-                />
-              ) : s.id === "methodology" ? (
-                <>
-                  <h2 className={styles.sectionHeading}>Methodology</h2>
-                  <Methodology />
-                </>
-              ) : (
-                <div className={styles.placeholder}>Section content coming soon.</div>
-              )}
-            </section>
-          ))}
+          <div className={`${styles.section} ${styles.sectionFirst}`}>
+            {active === "overview" && <Overview />}
+            {active === "womens-fashion" && <WomensFashion />}
+            {active === "k-beauty" && (
+              <AreaSection
+                areaId="A2"
+                title="K-Beauty & Skincare Routines"
+                callout="34% of Indian Gen Z actively exploring Korean skincare — YouGov/GCI Magazine 2025"
+              />
+            )}
+            {active === "creator-tools" && (
+              <AreaSection
+                areaId="A3"
+                title="Creator Tools & Consumer Electronics"
+                callout="Ring lights were Meesho's #1 electronics category search item H1 2024, driven entirely by Gen Z content creators — Meesho Smart Shopper Report"
+                cardOverrides={{
+                  "Ring Lights & Creator Accessories": {
+                    cleanProductCount: 198,
+                  },
+                }}
+              />
+            )}
+            {active === "sports-fitness" && (
+              <AreaSection
+                areaId="A4"
+                title="Sports, Fitness & Athleisure"
+                callout="1-in-3 Gen Z consumers allocates more than 20% of their income to fitness-related activities — Outlook Luxe / RedSeer 2026"
+                showShopsyAdvantage
+              />
+            )}
+            {active === "jewellery" && (
+              <AreaSection
+                areaId="A5"
+                title="Jewellery & Accessories"
+                callout="Artificial jewellery market growing at CAGR 11.4% (2025–29), driven by affordability and online access among younger consumers — IBEF 2025"
+              />
+            )}
+            {active === "methodology" && (
+              <>
+                <h2 className={styles.sectionHeading}>Methodology</h2>
+                <Methodology />
+              </>
+            )}
+          </div>
         </main>
       </div>
     </div>
