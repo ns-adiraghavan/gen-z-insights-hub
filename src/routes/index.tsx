@@ -6,6 +6,7 @@ import { WomensFashion } from "@/components/womens-fashion/WomensFashion";
 import { AreaSection } from "@/components/area-section/AreaSection";
 import { Methodology } from "@/components/methodology/Methodology";
 import { DatasetsProvider } from "@/data/DatasetsContext";
+import { LoginGate } from "@/components/login/LoginGate";
 import netscribesLogo from "@/assets/netscribes-logo.png";
 
 export const Route = createFileRoute("/")({
@@ -44,6 +45,7 @@ function Index() {
   const [active, setActive] = useState<string>("overview");
 
   return (
+    <LoginGate>
     <DatasetsProvider>
     <div className={styles.shell}>
       <aside className={styles.sidebar}>
@@ -130,5 +132,6 @@ function Index() {
       </div>
     </div>
     </DatasetsProvider>
+    </LoginGate>
   );
 }
