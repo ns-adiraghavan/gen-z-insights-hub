@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useDatasets } from "@/data/useDatasets";
 import { CoverageHeatmap } from "./CoverageHeatmap";
 import { WatchlistPanel } from "./WatchlistPanel";
@@ -54,9 +53,8 @@ function priorityBadgeClass(p?: string) {
   return styles.priorityBadgeDefault;
 }
 
-export function Overview() {
+export function Overview({ onNavigate }: { onNavigate?: (sectionId: string) => void }) {
   const { data, loading } = useDatasets();
-  const [activeIdx, setActiveIdx] = useState(0);
 
   if (loading) {
     return (
@@ -117,13 +115,11 @@ export function Overview() {
                 type="button"
                 key={r.area_id ?? i}
                 onClick={() => {
-                  setActiveIdx(i);
-                  const sectionId = r.area_id ? AREA_TO_SECTION[r.area_id] : undefined;
-                  if (sectionId) {
-                    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth", block: "start" });
+                  if (onNavigate && r.area_id && AREA_TO_SECTION[r.area_id]) {
+                    onNavigate(AREA_TO_SECTION[r.area_id]);
                   }
                 }}
-                className={`${styles.card} ${i === activeIdx ? styles.cardActive : ""}`}
+                className={styles.card}
               >
                 <div className={styles.cardName}>{r.area_name ?? "—"}</div>
                 <div className={styles.cardBadges}>

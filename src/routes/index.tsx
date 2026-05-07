@@ -83,7 +83,7 @@ function Index() {
 
         <main className={styles.content}>
           <div className={`${styles.section} ${styles.sectionFirst}`}>
-            {active === "overview" && <Overview />}
+            {active === "overview" && <Overview onNavigate={(id) => setActive(id)} />}
             {active === "womens-fashion" && <WomensFashion />}
             {active === "k-beauty" && (
               <AreaSection
