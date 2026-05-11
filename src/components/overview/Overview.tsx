@@ -81,10 +81,10 @@ export function Overview({ onNavigate }: { onNavigate?: (sectionId: string) => v
         </div>
         <div className={styles.heroStats}>
           {[
-            { n: "240", l: "Categories Analyzed" },
+            { n: "208", l: "Categories Analyzed" },
             { n: "5", l: "Priority Segments" },
             { n: "90+", l: "Gen Z Keywords" },
-            { n: "10", l: "Gap Recommendations" },
+            { n: "8", l: "Gap Recommendations" },
           ].map((s) => (
             <div key={s.l} className={styles.heroStat}>
               <div className={styles.heroStatNum}>{s.n}</div>
@@ -196,7 +196,7 @@ export function Overview({ onNavigate }: { onNavigate?: (sectionId: string) => v
       {/* COMPONENT 4 */}
       <div className={styles.provenance}>
         Meesho pricing data: live scrape April 2026 · Gen Z signal tiers: NS Research,
-        evidence-tiered per source quality · Shopsy pricing: not available in this dataset
+        evidence-tiered per source quality · Shopsy coverage: 208-category audit, May 2026 · Shopsy pricing: not available in this dataset
       </div>
 
       <WatchlistPanel />

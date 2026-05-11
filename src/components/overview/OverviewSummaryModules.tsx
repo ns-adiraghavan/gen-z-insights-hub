@@ -51,22 +51,27 @@ const SUMMARY_ROWS: SummaryRow[] = [
 ];
 
 const SHOPSY_EXCLUSIVES: { emoji: string; text: string }[] = [
-  { emoji: "📚", text: "Full Books Category (Academic, Fiction, Entrance Exam, Children's)" },
-  { emoji: "🎵", text: "Musical Instruments (Flutes, Guitars, Keyboards, Dholaks)" },
+  { emoji: "🎵", text: "Musical Instruments (Flutes, Dholaks, Guitars, Keyboards)" },
+  { emoji: "📚", text: "Books (Aerospace, Engineering, Finance, Comics, Children's)" },
   { emoji: "🏏", text: "Sports Equipment (Cricket, Treadmills, Skateboards, Roller Skates)" },
   { emoji: "👔", text: "Men's Suits & Blazers (dedicated section)" },
-  { emoji: "☀️", text: "Sunscreen / SPF Products (exclusive in Beauty)" },
-  { emoji: "🧢", text: "Caps & Hats (Shopsy exclusive in Accessories)" },
+  { emoji: "🧘", text: "Yoga Mats & Fitness Accessories (dedicated section)" },
+  { emoji: "👡", text: "Women's Slippers & Flip Flops (dedicated section)" },
+  { emoji: "👞", text: "Men's Formal Shoes (dedicated section)" },
+  { emoji: "🦷", text: "Oral Care (dedicated section)" },
+  { emoji: "🪑", text: "Hammock Swing (exclusive indoor, outdoor & kids swings)" },
 ];
 
 const MEESHO_EXCLUSIVES: { emoji: string; text: string }[] = [
-  { emoji: "🛒", text: "Full Grocery & Food Category" },
-  { emoji: "🛋", text: "Furniture (Beds, Sofas, Wardrobes)" },
-  { emoji: "🏠", text: "Home Essentials (8 sub-types — Shopsy has only Hangers)" },
-  { emoji: "💅", text: "Makeup Brushes & Accessories" },
-  { emoji: "👠", text: "Plus Size Women's Fashion" },
-  { emoji: "💍", text: "Men's Jewellery (Chains, Studs, Bracelets)" },
-  { emoji: "🎒", text: "Luggage & Trolley Bags" },
+  { emoji: "🎉", text: "Party Items & Supplies (kids, theme-based, single to bundled SKU)" },
+  { emoji: "🩲", text: "Pajamas & Loungewear (dedicated for men and women)" },
+  { emoji: "💄", text: "Beauty Essentials (anti-aging, sunscreen, whitening cream sub-types)" },
+  { emoji: "🦟", text: "Insect Protection / Repellents (mosquito repellent, protection)" },
+  { emoji: "💡", text: "Lights & Lamps (dedicated section)" },
+  { emoji: "💍", text: "Anklets & Toe Rings (dedicated for girls and women)" },
+  { emoji: "📰", text: "Magazine & Newspaper Racks (dedicated section)" },
+  { emoji: "🔑", text: "Keychains (dedicated for men and women)" },
+  { emoji: "👞", text: "Loafers (dedicated section for men)" },
 ];
 
 const STEPS: { num: string; heading: string; body: string }[] = [
@@ -80,7 +85,7 @@ const STEPS: { num: string; heading: string; body: string }[] = [
     num: "02",
     heading: "Close Plus Size & Men's Jewellery Gaps",
     body:
-      "Both categories are live on Meesho but absent on Shopsy. Create dedicated sections with sizes up to 4XL/6XL. Aligns to documented Gen Z body-positivity and gender-fluid fashion values.",
+      "Both categories are currently absent on Meesho as well, despite being highly aligned with emerging Gen Z trends. Create dedicated Plus Size sections with sizes up to 4XL/6XL and a Men's Jewellery sub-category. Aligns to documented Gen Z body-positivity and gender-fluid fashion values.",
   },
   {
     num: "03",
@@ -173,7 +178,7 @@ export function OverviewSummaryModules() {
             </div>
           </div>
           <div className={styles.posSource}>
-            Source: NS Research Team — 240 subcategory audit, April 2026
+            Source: NS Research Team — 208-category audit, May 2026
           </div>
         </div>
       </section>
