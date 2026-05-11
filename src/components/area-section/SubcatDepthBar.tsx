@@ -50,14 +50,12 @@ export function SubcatDepthBar({ depthRow }: SubcatDepthBarProps) {
         <span className={styles.infoWrap} tabIndex={0}>
           <span className={styles.infoIcon} aria-label="More info">i</span>
           <span className={styles.tooltip} role="tooltip">
-            Source: Meesho live scrape, April 2026. sub_sub_category_name field from
+            Source: Meesho live scrape, May 2026. sub_sub_category_name field from
             Meesho catalogue API — this is Meesho's own internal categorisation of each
             product. A single search keyword may surface products from multiple internal
             subcategories. High diversity (many subcats) = fragmented demand or broad
             keyword. Low diversity (one dominant subcat) = focused, cleanly mapped
-            category. Percentages are of total scraped results before contamination
-            filtering. contamination_note is shown where known non-target products
-            appeared.
+            category.
           </span>
         </span>
       </div>

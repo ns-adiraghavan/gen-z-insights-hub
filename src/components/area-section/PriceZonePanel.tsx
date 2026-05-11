@@ -40,7 +40,7 @@ export function PriceZonePanel({ areaId, signals, pricingByKw }: PriceZonePanelP
         <span className={styles.infoWrap} tabIndex={0}>
           <span className={styles.infoIcon} aria-label="More info">i</span>
           <span className={styles.tooltip} role="tooltip">
-            Source: Meesho live scrape, April 2026. Price zones computed from min_catalog_price across all clean (contamination-filtered) products per subcategory. Impulse (&lt;₹200) = low-friction first purchase, high impulse rate. Considered (₹200–₹500) = comparison shopping likely, brand matters. Premium (₹500+) = quality or brand signal required. Shopsy pricing not available — Meesho shown as competitive benchmark only.
+            Source: Meesho live scrape, May 2026. Price zones computed from min_catalog_price across all clean products per subcategory. Impulse (&lt;₹200) = low-friction first purchase, high impulse rate. Considered (₹200–₹500) = comparison shopping likely, brand matters. Premium (₹500+) = quality or brand signal required. Shopsy pricing not available — Meesho shown as competitive benchmark only.
           </span>
         </span>
       </div>
@@ -113,7 +113,7 @@ export function PriceZonePanel({ areaId, signals, pricingByKw }: PriceZonePanelP
       </div>
 
       <div className={styles.note}>
-        Shopsy pricing not available — Meesho benchmark only · Scrape: April 2026
+        Shopsy pricing not available — Meesho benchmark only · Scrape: May 2026
       </div>
     </div>
   );
