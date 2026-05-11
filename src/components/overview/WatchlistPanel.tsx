@@ -40,12 +40,12 @@ export function WatchlistPanel() {
         <span className={styles.infoWrap} tabIndex={0}>
           <span className={styles.infoIcon} aria-label="More info">i</span>
           <span className={styles.tooltip} role="tooltip">
-            These 5 opportunities were identified in the NS research team's full gap
-            analysis (Sheet 5 of the research datasheet) but fall outside the top 5
-            priority investment areas. Priority HIGH = strong Gen Z demand signal,
-            Meesho already has a section, Shopsy does not. Priority MEDIUM = growing
-            demand with directional evidence only. first_mover_opp = neither Shopsy nor
-            Meesho has a dedicated section yet — genuine whitespace.
+            Three next-wave opportunities identified in the NS research gap
+            analysis that sit outside the 5 core investment areas.
+            Priority HIGH = strong Gen Z demand signal with a visible
+            discovery gap on Shopsy. Priority MEDIUM = growing demand with
+            directional evidence. First Mover = neither platform has a
+            dedicated section yet — genuine whitespace opportunity.
           </span>
         </span>
       </div>
