@@ -73,7 +73,7 @@ export function CoverageHeatmap() {
         <span className={styles.infoWrap} tabIndex={0}>
           <span className={styles.infoIcon} aria-label="More info">i</span>
           <span className={styles.tooltip} role="tooltip">
-            NS Research team manually audited 240 subcategories across 20 categories on Shopsy.in and Meesho.com (April 2026). Each subcategory was classified as: Both platforms, Shopsy only, or Meesho only. "Missing" count = subcategories where Meesho is present but Shopsy is not. Coverage % = subcategories Shopsy carries ÷ total subcategories in that category.
+            NS Research team manually audited 208 subcategories across 20 categories on Shopsy.in and Meesho.com (May 2026). Each subcategory was classified as: Both platforms, Shopsy only, or Meesho only. "Missing" count = subcategories where Meesho is present but Shopsy is not. Coverage % = subcategories Shopsy carries ÷ total subcategories in that category.
           </span>
         </span>
       </div>
@@ -97,7 +97,7 @@ export function CoverageHeatmap() {
       </div>
 
       <div className={styles.provenance}>
-        240 subcategories audited · NS Research April 2026 · Meesho pricing not a factor in this view
+        208 subcategories audited · NS Research May 2026 · Meesho pricing not a factor in this view
       </div>
     </div>
   );
