@@ -1,8 +1,8 @@
 import styles from "./Methodology.module.css";
 
 const OUR_DATA = [
-  "Meesho Live Product Scrape — April 2026. 7,459 products across 19 keyword categories, ~400 products per keyword. Fields: product name, subcategory, min catalogue price, review count, rating, assurance badge.",
-  "NS Category Audit — April 2026. 240 subcategories manually mapped across 20 category groups. Each subcategory classified as Both / Shopsy Only / Meesho Only by the NS research team.",
+  "Meesho Live Product Scrape — May 2026. 7,069 products across 19 keyword categories. Fields: product name, subcategory, min catalogue price, review count, rating, assurance badge.",
+  "NS Category Audit — May 2026. 208 subcategories manually mapped across 20 category groups. Each subcategory classified as Both / Shopsy Only / Meesho Only by the NS research team.",
 ];
 const PRIMARY_SURVEY = [
   "YouGov / GCI Magazine 2025 — Commissioned primary survey, India-specific, 18–29 age group. This is the source of the 34% K-beauty statistic. Independent of NS — included as the strongest available primary human evidence in the dataset.",
@@ -14,10 +14,10 @@ const INDUSTRY_TRADE = [
 ];
 
 const SCRAPE_FIELDS: { label: string; value: string }[] = [
-  { label: "Scrape date", value: "April 2026" },
-  { label: "Total products", value: "7,459 (after contamination filtering)" },
+  { label: "Scrape date", value: "May 2026" },
+  { label: "Total products", value: "7,069" },
   { label: "Keywords covered", value: "19 across 5 category areas" },
-  { label: "Products per keyword", value: "~400" },
+  { label: "Products per keyword", value: "~370" },
   {
     label: "Fields captured",
     value:
@@ -105,21 +105,6 @@ export function Methodology() {
           ))}
         </dl>
 
-        <div className={styles.amberCallout}>
-          <div className={styles.calloutLabel}>Data quality note</div>
-          <p>Three keyword categories required contamination filtering before analysis:</p>
-          <p>
-            <strong>Ring Lights & Creator Tools:</strong> 49.2% of raw results (192 of 390 rows) were jewellery 'Rings' misclassified by Meesho's search index. Only 198 confirmed creator product rows were used for pricing and count metrics.
-          </p>
-          <p>
-            <strong>Earphones & Earbuds:</strong> 8.3% of results were non-earphone products (Nail Cutters, Mobile Cases). Removed before analysis.
-          </p>
-          <p>
-            <strong>Women's Matching Sets:</strong> 10.1% of results were non-fashion items (Bangles, Watches, Perfumes). Removed before analysis.
-          </p>
-          <p>All metrics in this dashboard are computed from clean rows only. Raw counts are retained in the underlying data for audit purposes.</p>
-        </div>
-
         <div className={styles.greyCallout}>
           <div className={styles.calloutLabel}>Shopsy pricing note</div>
           <p>
@@ -135,8 +120,8 @@ export function Methodology() {
         <h3 className={styles.heading}>How We Mapped Coverage</h3>
         <p className={styles.subheading}>The Category Audit</p>
         <p className={styles.body}>
-          The Netscribes research team manually audited 240 subcategories
-          across 20 category groups in April 2026. Each subcategory was
+          The Netscribes research team manually audited 208 subcategories
+          across 20 category groups in May 2026. Each subcategory was
           classified as present on Both platforms, Shopsy Only, or Meesho
           Only. Coverage percentage is calculated as: (Both + Shopsy Only) ÷
           Total Subcategories × 100. No estimates — every data point is a
