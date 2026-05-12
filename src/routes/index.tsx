@@ -74,7 +74,8 @@ function Index() {
           <div className={styles.snapshotLabel}>Data Snapshot</div>
           <div className={styles.snapshotValue}>7,069</div>
           <div className={styles.snapshotMeta}>Meesho products</div>
-          <div className={styles.snapshotMetaDim}>Scraped: Apr 2026</div>
+          <div className={styles.snapshotMetaDim}>Scrape: Apr 2026</div>
+          <div className={styles.snapshotMetaDim}>Audit: May 2026</div>
         </div>
       </aside>
 
