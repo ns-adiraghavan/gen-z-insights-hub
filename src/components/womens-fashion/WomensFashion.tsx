@@ -96,12 +96,6 @@ export function WomensFashion() {
               #{rec?.genz_category_rank ?? "—"}
             </div>
           </div>
-          <div className={styles.chip}>
-            <div className={styles.chipLabel}>Strategic Type</div>
-            <div className={`${styles.chipValue} ${styles.chipValueUrgent}`}>
-              {rec?.gap_priority ?? "—"}
-            </div>
-          </div>
         </div>
       </div>
 
