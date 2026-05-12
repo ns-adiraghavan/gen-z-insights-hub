@@ -38,7 +38,7 @@ const SUMMARY_ROWS: SummaryRow[] = [
     price: "₹200–₹500",
     firstMover: false,
     action:
-      "Extend Shopsy's existing 100% coverage lead — promote Athleisure & Protein Supplements",
+      "Extend Shopsy's full coverage lead — promote Athleisure, Yoga Mats & Protein Supplements",
   },
   {
     area: "Jewellery & Accessories",
@@ -113,7 +113,6 @@ export function OverviewSummaryModules() {
               <thead>
                 <tr>
                   <th>Area</th>
-                  <th>Gap Priority</th>
                   <th>Price Target</th>
                   <th>First Mover?</th>
                   <th>Recommended Action</th>
@@ -123,15 +122,6 @@ export function OverviewSummaryModules() {
                 {SUMMARY_ROWS.map((r) => (
                   <tr key={r.area}>
                     <td className={styles.areaName}>{r.area}</td>
-                    <td>
-                      <span
-                        className={`${styles.pill} ${
-                          r.priority === "URGENT" ? styles.pillUrgent : styles.pillHigh
-                        }`}
-                      >
-                        {r.priority}
-                      </span>
-                    </td>
                     <td className={styles.priceTarget}>{r.price}</td>
                     <td className={r.firstMover ? styles.fmYes : styles.fmNo}>
                       {r.firstMover ? "✅ Yes" : "❌ No"}

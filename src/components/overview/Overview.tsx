@@ -94,25 +94,6 @@ export function Overview({ onNavigate }: { onNavigate?: (sectionId: string) => v
         </div>
       </div>
 
-      <div className={styles.priorityBasisBlock}>
-        <div className={styles.priorityDefRow}>
-          <span className={styles.priorityDefBadgeUrgent}>Whitespace</span>
-          <span className={styles.priorityDefText}>No dedicated section on either platform — first-mover opportunity</span>
-        </div>
-        <div className={styles.priorityDefRow}>
-          <span className={styles.priorityDefBadgeHigh}>Visibility Gap</span>
-          <span className={styles.priorityDefText}>Products exist on Shopsy but are buried — no dedicated discovery surface</span>
-        </div>
-        <div className={styles.priorityDefRow}>
-          <span className={styles.priorityDefBadgeDefault}>Shopsy Leads</span>
-          <span className={styles.priorityDefText}>Shopsy has stronger coverage than Meesho here — defend and promote</span>
-        </div>
-        <div className={styles.priorityDefRow}>
-          <span className={styles.priorityDefBadgeDefault}>Competitive Gap</span>
-          <span className={styles.priorityDefText}>Meesho has a dedicated section; Shopsy does not</span>
-        </div>
-      </div>
-
       {/* COMPONENT 2 */}
       {recs.length > 0 ? (
         <div className={styles.cardsScroll}>
@@ -133,11 +114,6 @@ export function Overview({ onNavigate }: { onNavigate?: (sectionId: string) => v
                 <div className={styles.cardBadges}>
                   {tier && (
                     <span className={`${styles.tierBadge} ${tierClass(tier)}`}>{tier}</span>
-                  )}
-                  {r.gap_priority && (
-                    <span className={`${styles.gapBadge} ${gapBadgeClass(r.gap_priority)}`}>
-                      {r.gap_priority}
-                    </span>
                   )}
                 </div>
                 {typeof r.meesho_median_price_inr === "number" && (
@@ -162,7 +138,7 @@ export function Overview({ onNavigate }: { onNavigate?: (sectionId: string) => v
       <div className={styles.gapListSection}>
         <h2 className={styles.gapListHeading}>Catalogue Gaps to Close</h2>
         <p className={styles.gapListSubhead}>
-          Each row = one missing section on Shopsy that has documented Gen Z demand. Priority and First Mover status are defined above.
+          Each row = one missing section on Shopsy with documented Gen Z demand.
         </p>
       <div className={styles.gapList}>
         {gaps.length > 0 ? (
@@ -179,10 +155,10 @@ export function Overview({ onNavigate }: { onNavigate?: (sectionId: string) => v
                 </div>
                 <div
                   className={`${styles.fmPill} ${
-                    g.first_mover_opportunity === true ? styles.fmPillYes : styles.fmPillNo
+                    g.first_mover_opp === true ? styles.fmPillYes : styles.fmPillNo
                   }`}
                 >
-                  {g.first_mover_opportunity === true ? "✓ First mover" : "—"}
+                  {g.first_mover_opp === true ? "✓ First mover" : "—"}
                 </div>
               </div>
             );
