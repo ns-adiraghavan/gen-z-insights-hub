@@ -131,12 +131,6 @@ export function AreaSection({
             <div className={styles.chipLabel}>Gen Z Rank</div>
             <div className={styles.chipValue}>#{rec?.genz_category_rank ?? "—"}</div>
           </div>
-          <div className={styles.chip}>
-            <div className={styles.chipLabel}>Strategic Type</div>
-            <div className={`${styles.chipValue} ${priorityValueClass(rec?.gap_priority)}`}>
-              {rec?.gap_priority ?? "—"}
-            </div>
-          </div>
           {showShopsyAdvantage && (
             <div className={styles.advantageChip}>
               <div className={styles.advantageLabel}>Shopsy Advantage</div>
@@ -147,9 +141,6 @@ export function AreaSection({
       </div>
 
       <DecisionCallout areaId={areaId} />
-
-      {/* Callout */}
-      {callout && <div className={styles.callout}>{callout}</div>}
 
       <PriceZonePanel areaId={areaId} signals={signals} pricingByKw={pricingByKw} />
 
