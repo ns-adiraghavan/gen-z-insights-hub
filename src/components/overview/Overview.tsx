@@ -17,7 +17,7 @@ interface Recommendation {
 interface ShopsyGap {
   gap_name?: string;
   priority?: string;
-  first_mover_opportunity?: boolean;
+  first_mover_opp?: boolean;
   recommended_action?: string;
 }
 
