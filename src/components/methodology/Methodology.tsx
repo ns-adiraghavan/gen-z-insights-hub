@@ -36,7 +36,7 @@ const EXPAND_STEPS = [
     num: "02",
     heading: "Weekly Scrape Cadence",
     body:
-      "Move from a single April 2026 snapshot to a weekly automated scrape of both platforms. Enables pricing trend tracking, new listing detection, and promotion response monitoring.",
+      "Move from a single-snapshot scrape to a weekly automated scrape of both platforms. Enables pricing trend tracking, new listing detection, and promotion response monitoring.",
   },
   {
     num: "03",
