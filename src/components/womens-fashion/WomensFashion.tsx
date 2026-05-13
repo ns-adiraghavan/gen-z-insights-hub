@@ -1,4 +1,9 @@
+import { useEffect, useState } from "react";
 import { useDatasets } from "@/data/useDatasets";
+import { loadDataset } from "@/data/loadData";
+import { DecisionCallout } from "@/components/area-section/DecisionCallout";
+import { PriceZonePanel } from "@/components/area-section/PriceZonePanel";
+import { SubcatDepthBar, type SubcatDepthRow } from "@/components/area-section/SubcatDepthBar";
 import styles from "./WomensFashion.module.css";
 
 interface Recommendation {
