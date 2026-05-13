@@ -119,6 +119,10 @@ export function WomensFashion() {
         </div>
       </div>
 
+      <DecisionCallout areaId={AREA_ID} />
+
+      <PriceZonePanel areaId={AREA_ID} signals={signals} pricingByKw={pricingByKw} />
+
       {/* COMPONENT 2 */}
       {signals.length > 0 ? (
         <div className={styles.grid}>
