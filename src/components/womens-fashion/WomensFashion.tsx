@@ -193,6 +193,11 @@ export function WomensFashion() {
                   </div>
                 )}
 
+                <SubcatDepthBar
+                  keyword={s.search_keyword ?? ""}
+                  depthRow={depthByKw.get(s.search_keyword ?? "")}
+                />
+
                 <div className={styles.cardFooter}>
                   {typeof p?.clean_product_count === "number"
                     ? `${p.clean_product_count.toLocaleString()} Meesho products`
