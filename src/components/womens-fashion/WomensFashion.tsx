@@ -94,6 +94,10 @@ export function WomensFashion() {
   for (const p of pricing) {
     if (p.search_keyword) pricingByKw.set(p.search_keyword, p);
   }
+  const depthByKw = new Map<string, SubcatDepthRow>();
+  for (const d of depth) {
+    if (d.search_keyword) depthByKw.set(d.search_keyword, d);
+  }
 
   return (
     <div className={styles.wrap}>
