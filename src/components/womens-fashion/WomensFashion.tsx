@@ -58,6 +58,17 @@ function pct(value: number, min: number, max: number) {
 
 export function WomensFashion() {
   const { data, loading } = useDatasets();
+  const [depth, setDepth] = useState<SubcatDepthRow[]>([]);
+
+  useEffect(() => {
+    let cancelled = false;
+    loadDataset<SubcatDepthRow>("subcat_depth.json.gz").then((rows) => {
+      if (!cancelled) setDepth(rows);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   if (loading) {
     return (
