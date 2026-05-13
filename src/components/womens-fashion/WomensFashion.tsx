@@ -119,6 +119,10 @@ export function WomensFashion() {
         </div>
       </div>
 
+      <div className={styles.calloutBanner}>
+        Y2K and anime-influenced streetwear searches grew 3x on Meesho in 12 months — Meesho Smart Shopper Report 2024. Neither Shopsy nor Meesho owns a dedicated Streetwear section — first-mover window is open.
+      </div>
+
       <DecisionCallout areaId={AREA_ID} />
 
       <PriceZonePanel areaId={AREA_ID} signals={signals} pricingByKw={pricingByKw} />
